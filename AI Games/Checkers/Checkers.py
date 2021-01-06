@@ -2,13 +2,9 @@ import copy
 import random
 from tkinter import *
 import time
+import re
 tk = Tk()
 random.seed(a=None, version=2)
-size_board = 8
-size_of_squares = 100
-time_delay = 1
-color_1 = 'black'
-color_2 = 'white'
 white_choices = {
     0: {
         'move': [(-1, -1), (1, -1), (-2, -2), (2, -2)]
@@ -52,6 +48,7 @@ class BoardSquare:
 
 class DrawBoardPieces:
     def __init__(self, size, code_make, game_sizing):
+        global settings
         self.pieces = []
         x1 = size / 3
         y1 = size / 3
@@ -71,9 +68,9 @@ class DrawBoardPieces:
                 x1 = x1 + size
                 x2 = x2 + size
             if character == 'w':
-                self.create_piece('red', x1, y1, x2, y2)
+                self.create_piece(settings['color'][2], x1, y1, x2, y2)
             elif character == 'b':
-                self.create_piece('blue', x1, y1, x2, y2)
+                self.create_piece(settings['color'][3], x1, y1, x2, y2)
 
     def create_piece(self, color, x1, y1, x2, y2):
         self.pieces.append(canvas.create_rectangle((x1, y1, x2, y2), fill=color))
@@ -82,7 +79,7 @@ class DrawBoardPieces:
         for i in self.pieces:
             canvas.delete(i)
         self.pieces = []
-        time.sleep(time_delay)
+        time.sleep(settings['td'][0])
 
 
 def build_board():
@@ -258,7 +255,7 @@ def kingdom(team, color):
 
 
 def clean_board(coord_board, white_team, black_team, un_modded_board):
-    global squares
+    global squares, settings
     code = ''
     # print(coord_board)
     un_modding_board = copy. deepcopy(un_modded_board)
@@ -273,7 +270,7 @@ def clean_board(coord_board, white_team, black_team, un_modded_board):
         print('  '.join(inside))
     print('\n\n')
     canvas.delete(squares.del_pieces())
-    squares = DrawBoardPieces(size_of_squares, code, size_board)
+    squares = DrawBoardPieces(settings['sos'][0], code, settings['sb'][0])
     canvas.update()
     return code
 
@@ -292,17 +289,24 @@ def games(coordinate_board, coded_board, white_team, black_team, un_modded_board
 
 
 if __name__ == '__main__':
-    canvas = Canvas(tk, width=size_of_squares*8, height=size_of_squares*8)
+    setting_encoded, settings = open('Checkers input\\Checkers_Input.txt', 'r'), {}
+    print(setting_encoded)
+    for i in setting_encoded:
+        line, setting_num = re.findall(r'\w+', i), []
+        setting_name = line[0]
+        for j in range(1, len(line), 2):
+            if line[j].isdigit():
+                setting_num.append(int(line[j]))
+            else:
+                setting_num.append(line[j])
+        settings.update({setting_name: setting_num})
+    print('hello', repr(settings))
+    canvas = Canvas(tk, width=settings['sos'][0]*8, height=settings['sos'][0]*8)
     canvas.pack()
     coordinate_board1, coded_board1, white_team1, black_team1, loosened_board = build_board()
     # print('ehlp', loosened_board)
     black_goal, white_goal = coordinate_board1[0], coordinate_board1[-1]
-    # print(white_team1, '\n', black_team1)
-    # print(white_goal, '\n', black_goal)
-    # for coord in coordinate_board1:
-    #     print(coord)
-    # print('\n', coded_board1)
-    BoardSquare(color_1, color_2, size_of_squares, size_board)
-    squares = DrawBoardPieces(size_of_squares, coded_board1, size_board)
+    BoardSquare(settings['color'][0], settings['color'][1], settings['sos'][0], settings['sb'][0])
+    squares = DrawBoardPieces(settings['sos'][0], coded_board1, settings['sb'][0])
     games(coordinate_board1, coded_board1, white_team1, black_team1, loosened_board)
     tk.mainloop()

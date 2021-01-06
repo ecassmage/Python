@@ -1,0 +1,4 @@
+sos = 100
+sb = 8
+td = 1
+color = 'black', color_2 = 'white', color_3 = 'red', color_4 = 'blue'
