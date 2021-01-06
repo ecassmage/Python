@@ -9,12 +9,12 @@ from tkinter import *
 tk = Tk()
 # End of Imports
 # Start Program constant variables
-game_size = 15  # board size
+game_size = 3  # board size
 game_length = 100000  # amount of rounds that will be simulated
 percent_turn_off = 95  # when program will stop notifying about time milestones
 info_rep = 1000  # amount of rounds per information dump
 SIZE = 90
-time_delay = 0.5
+time_delay = 2
 easy = True
 # End of Program constant variables
 # All the pre defined variables
