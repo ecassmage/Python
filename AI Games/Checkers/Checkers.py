@@ -21,7 +21,8 @@ black_choices = {
         'move': [(-1, -1), (1, -1), (-1, 1), (1, 1), (-2, -2), (2, -2), (-2, 2), (2, 2)]
         }
 }
-all_defined_boards, all_kill_moves = {}, {}
+all_defined_boards, all_kill_moves, winner = {}, {}, []
+global settings
 
 
 class BoardSquare:
@@ -55,8 +56,6 @@ class DrawBoardPieces:
         x2 = size - size / 3
         y2 = size - size / 3
         for number, character in enumerate(code_make):
-            # print(number % game_sizing)
-            # print(character)
             if number % game_sizing == 0 and number != 0:
                 x1 = size / 3
                 y1 = y1 + size
@@ -104,8 +103,8 @@ def build_board():
         board.append(board_row)
         coordinated_board.append(coordinated_board_row)
     loose_board = copy.deepcopy(board)
-    [print('  '.join(i)) for i in board]
-    print('\n')
+    # [print('  '.join(i)) for i in board]
+    # print('\n')
     for i in range(3):
         for k, j in enumerate(board[i]):
             if j == '1':
@@ -118,7 +117,7 @@ def build_board():
                 black_team.update({coordinated_board[i][k]: 0})
     for i in board:
         coding_board += ''.join(i)
-        print('  '.join(i))
+        # print('  '.join(i))
     return coordinated_board, coding_board, white_team, black_team, loose_board
 
 
@@ -127,7 +126,6 @@ def all_possibilities_explored(team, i, x, y, choice):
     for x1, y1 in choice[team[i]]['move']:
         move = tuple((x + x1, y + y1))
         team_make.append(move)
-        # print(move)
     return team_make
 
 
@@ -139,28 +137,21 @@ def moving_games(movement, rows, board, team, opponent, x, y, i):
                 if moves in board[rows[row]] and abs(x - moves[0]) == 1 and abs(y - moves[1]) == 1 and \
                         moves not in team and moves not in opponent:
                     safe_moves.append(moves)
-                    # break
             elif abs(row) == 2:
                 if moves in board[rows[row]] and abs(x - moves[0]) == 2 and abs(y - moves[1]) == 2 and \
                         moves not in team and moves not in opponent \
                         and tuple(kill_move(team, opponent, i, moves)) in opponent:
-                    # print(opponent)
-                    # print('fuck you', tuple(kill_move(team, opponent, i, moves)))
                     safe_moves.append(moves)
                     kill_moves.append(moves)
-                    # break
     return safe_moves, kill_moves
 
 
 def all_possible_moves_that_can_be_made(board, team, opponent, color):
     team_moves, kill_moves, movement, killing_moves = {}, {}, [], []
-    # print("\n%s\n%s\n%s\n%s\n" % (board, team, opponent, color))
     global white_choices, black_choices
-    # white_team, black_team = {}, {}
     rows = {}
     for i in team:
         x, y = i
-        tru_y = 7 - y
         if team[i] == 1:
             rows = {2: 7 - (y + 2), 1: 7 - (y + 1), -1: 7 - (y - 1), -2: 7 - (y - 2)}
         else:
@@ -169,13 +160,9 @@ def all_possible_moves_that_can_be_made(board, team, opponent, color):
             elif color == 'black':
                 rows = {1: 7 - (y + 1), 2: 7 - (y + 2)}
         rows_temp = copy.copy(rows)
-        # print('what', rows)
         for row in rows_temp:
             if (7 >= rows_temp[row] >= 0) is False:
                 del rows[row]
-        # print('what', rows)
-        # print('true y:', tru_y)
-        # exit()
         if color == 'white':
             movement = all_possibilities_explored(team, i, x, y, white_choices)
         elif color == 'black':
@@ -192,11 +179,49 @@ def kill_move(team, opponent, piece, move):
     return int(((piece[0] - move[0]) / 2) + move[0]), int(((piece[1] - move[1]) / 2) + move[1])
 
 
-def smart_move_ai(moves_to_make, attacks_to_make):
+def advanced_check(moves_to_make, opponent, color, board_coord):
+    temp_move_pieces = {}
+    for moves_of_piece in moves_to_make:
+        temp_moves = []
+        for individual in moves_to_make[moves_of_piece]:
+            adjacency = [(individual[0] - 1, individual[1] + 1), (individual[0] + 1, individual[1] + 1),
+                         (individual[0] - 1, individual[1] - 1), (individual[0] + 1, individual[1] - 1)]
+            diagonals = {0: 3, 1: 2, 2: 3, 3: 0}
+            for adjacency_xy in adjacency:
+                if adjacency_xy in opponent:
+                    adjacency_caught = adjacency.index(adjacency_xy)
+                    opposite_adjacency = diagonals[adjacency_caught]
+                    print(repr(adjacency_caught), repr(opposite_adjacency))
+                    if opponent[adjacency_xy] == 0:
+                        if (color == 'white') and \
+                                (adjacency_caught == 2 or adjacency_caught == 3) and \
+                                (adjacency[opposite_adjacency] in
+                                 board_coord[7 - adjacency[opposite_adjacency][1]]):
+                            print('hello')
+                            break
+                        elif (color == 'black') and \
+                                (adjacency_caught == 0 or adjacency_caught == 1) and \
+                                (adjacency[opposite_adjacency] in
+                                 board_coord[7 - adjacency[opposite_adjacency][1]]):
+                            break
+                    elif (opponent[adjacency_xy] == 1) and \
+                            (adjacency[opposite_adjacency] in board_coord[7 - adjacency[opposite_adjacency][1]]):
+                        continue
+            else:
+                temp_moves.append(individual)
+        if len(temp_moves) > 0:
+            temp_move_pieces.update({moves_of_piece: temp_moves})
+    return temp_move_pieces
+
+
+def smart_move_ai(moves_to_make, attacks_to_make, opponent, color, board_coord):
     if len(attacks_to_make) > 0:
         moves = attacks_to_make
     else:
         moves = moves_to_make
+        temp_move_pieces = advanced_check(moves_to_make, opponent, color, board_coord)
+        if len(temp_move_pieces) > 0:
+            moves = temp_move_pieces
     return moves
 
 
@@ -212,33 +237,25 @@ def ai_decision_making(coordinates, code, team, opponent, color):
             kill_moves = all_kill_moves[code]
         else:
             kill_moves = {}
-    moves = smart_move_ai(moves, kill_moves)
+    # moves, kill_moves = all_possible_moves_that_can_be_made(coordinates, team, opponent, color)
+    # all_kill_moves.update({code: kill_moves})
+    # all_defined_boards.update({code: moves})
+    if color == 'white':
+        moves = smart_move_ai(moves, kill_moves, opponent, color, coordinates)
+    # moves = smart_move_ai(moves, kill_moves, team, opponent, color)
     choice_piece = list(moves)[random.randrange(0, len(moves))]
     piece_to_move = moves[choice_piece]
     move_move = piece_to_move[random.randrange(0, len(piece_to_move))]
-    # print(color, list(moves), choice_piece, piece_to_move, move_move)
     team.update({move_move: team[choice_piece]})
-    # print(team, opponent)
     del team[choice_piece]
-    # print(team, opponent)
-    # opponent.update({(6, 4): 0})
-    # choice_piece = (5, 3)
-    # team.update({(5, 3): 0})
-    # move_move = (7, 5)
-    # print(choice_piece, move_move)
     x, y = choice_piece
-    # print(x, y)
-    # print(opponent)
     if abs(x - move_move[0]) == 2 and abs(y - move_move[1]) == 2:
-        # print(x, y)
         killed = tuple(kill_move(team, opponent, choice_piece, move_move))
         if killed in opponent:
             del opponent[killed]
         else:
             print('Something Messed UP!!!')
             exit()
-    # print(opponent)
-    # print(team)
     return team, opponent
 
 
@@ -257,7 +274,6 @@ def kingdom(team, color):
 def clean_board(coord_board, white_team, black_team, un_modded_board):
     global squares, settings
     code = ''
-    # print(coord_board)
     un_modding_board = copy. deepcopy(un_modded_board)
     for num_r, coord_r in enumerate(coord_board):
         for num_c, coord_c in enumerate(coord_r):
@@ -267,31 +283,44 @@ def clean_board(coord_board, white_team, black_team, un_modded_board):
                 un_modding_board[num_r][num_c] = 'b'
     for inside in un_modding_board:
         code += ''.join(inside)
-        print('  '.join(inside))
-    print('\n\n')
-    canvas.delete(squares.del_pieces())
-    squares = DrawBoardPieces(settings['sos'][0], code, settings['sb'][0])
-    canvas.update()
+    #     print('  '.join(inside))
+    # print('\n\n')
+    if settings['automatic'][0]:
+        canvas.delete(squares.del_pieces())
+        squares = DrawBoardPieces(settings['sos'][0], code, settings['sb'][0])
+        canvas.update()
     return code
 
 
 def games(coordinate_board, coded_board, white_team, black_team, un_modded_board):
-    for _ in range(1000):
-        # White Teams Turn
-        white_team, black_team = ai_decision_making(coordinate_board, coded_board, white_team, black_team, 'white')
-        white_team = kingdom(white_team, 'white')
-        coded_board = clean_board(coordinate_board, white_team, black_team, un_modded_board)
-        # Black Teams Turn
-        black_team, white_team = ai_decision_making(coordinate_board, coded_board, black_team, white_team, 'black')
-        black_team = kingdom(black_team, 'black')
-        coded_board = clean_board(coordinate_board, white_team, black_team, un_modded_board)
-        print(_)
+    global prev
+    just_played = 'white'
+    while True:
+        try:
+            # White Teams Turn
+            white_team, black_team = ai_decision_making(coordinate_board, coded_board, white_team, black_team, 'white')
+            white_team = kingdom(white_team, 'white')
+            coded_board = clean_board(coordinate_board, white_team, black_team, un_modded_board)
+            just_played = 'white'
+            # Black Teams Turn
+            black_team, white_team = ai_decision_making(coordinate_board, coded_board, black_team, white_team, 'black')
+            black_team = kingdom(black_team, 'black')
+            coded_board = clean_board(coordinate_board, white_team, black_team, un_modded_board)
+            just_played = 'black'
+        except ValueError:
+            print("A winner has won")
+            winner.append(just_played)
+            print((time.process_time() - prev))
+            prev = time.process_time()
+            return
 
 
 if __name__ == '__main__':
-    setting_encoded, settings = open('Checkers input\\Checkers_Input.txt', 'r'), {}
-    print(setting_encoded)
+    setting_encoded, settings, squares = open('Checkers input\\Checkers_Input.txt', 'r'), {}, []
     for i in setting_encoded:
+        if i[0] == '#':
+            print(i)
+            continue
         line, setting_num = re.findall(r'\w+', i), []
         setting_name = line[0]
         for j in range(1, len(line), 2):
@@ -300,13 +329,32 @@ if __name__ == '__main__':
             else:
                 setting_num.append(line[j])
         settings.update({setting_name: setting_num})
-    print('hello', repr(settings))
-    canvas = Canvas(tk, width=settings['sos'][0]*8, height=settings['sos'][0]*8)
-    canvas.pack()
-    coordinate_board1, coded_board1, white_team1, black_team1, loosened_board = build_board()
-    # print('ehlp', loosened_board)
-    black_goal, white_goal = coordinate_board1[0], coordinate_board1[-1]
-    BoardSquare(settings['color'][0], settings['color'][1], settings['sos'][0], settings['sb'][0])
-    squares = DrawBoardPieces(settings['sos'][0], coded_board1, settings['sb'][0])
-    games(coordinate_board1, coded_board1, white_team1, black_team1, loosened_board)
-    tk.mainloop()
+    setting_encoded.close()
+    if settings['automatic'][0] == 0:
+        settings.update({'automatic': [False]})
+    elif settings['automatic'][0] == 1:
+        settings.update({'automatic': [True]})
+    canvas = Canvas(tk, width=settings['sos'][0] * 8, height=settings['sos'][0] * 8)
+    if settings['automatic'][0]:
+        canvas.pack()
+        BoardSquare(settings['color'][0], settings['color'][1], settings['sos'][0], settings['sb'][0])
+    prev = time.process_time()
+    for games_history in range(settings['game_length'][0]):
+        coordinate_board1, coded_board1, white_team1, black_team1, loosened_board = build_board()
+        black_goal, white_goal = coordinate_board1[0], coordinate_board1[-1]
+        if settings['automatic'][0] is True:
+            if games_history > 0:
+                canvas.delete(squares.del_pieces())
+            squares = DrawBoardPieces(settings['sos'][0], coded_board1, settings['sb'][0])
+            canvas.update()
+        games(coordinate_board1, coded_board1, white_team1, black_team1, loosened_board)
+    white_wins, black_wins = 0, 0
+    for i in winner:
+        if i == 'white':
+            white_wins += 1
+        elif i == 'black':
+            black_wins += 1
+    print('%s won %d times\n%s won %d times.' % (settings['color'][2], white_wins, settings['color'][3], black_wins))
+    if settings['automatic'][0]:
+        tk.destroy()
+        tk.mainloop()

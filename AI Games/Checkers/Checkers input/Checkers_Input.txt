@@ -1,4 +1,8 @@
-sos = 100
+sos = 130
 sb = 8
-td = 1
-color = 'black', color_2 = 'white', color_3 = 'red', color_4 = 'blue'
+td = 0
+automatic = 1
+# Color represents the colors used when making the tkinter board, first two colors for board second two for pieces,
+# color for first board color, color_1 for second board color, color_2 for top team, color_3 for bottom team
+color = black, color_1 = white, color_2 = magenta, color_3 = cyan
+game_length = 100
