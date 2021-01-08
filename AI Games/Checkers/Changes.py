@@ -26,6 +26,37 @@ all_defined_boards, all_kill_moves, winner = {}, {}, []
 global settings
 
 
+class Check:
+
+    def __init__(self, value):
+        self.dig = value
+        self.isfloat = self.float_check(value)
+        self.make_bool = self.making_bool(value)
+
+    @staticmethod
+    def float_check(value):
+        try:
+            if float(value) and value.find('.') == 1:
+                return True
+        except ValueError:
+            return False
+
+    @staticmethod
+    def making_bool(value):
+        if value == 'True':
+            return True
+        else:
+            return False
+
+
+# def isfloat(value):
+#     try:
+#         float(value)
+#         return True
+#     except ValueError:
+#         return False
+
+
 class BoardSquare:
     def __init__(self, colour_1, colour_2, size_of_board, count_of_squares):
         color = colour_1
@@ -331,25 +362,30 @@ def pre_game_setup():
     setting_encoded, settings, squares = open('Checkers input\\Checkers_Input.txt', 'r'), {}, []
     for i in setting_encoded:
         if i[0] == '#' or i[0] == '\n':
-            print(repr(i))
+            if i[0] == '#':
+                print(i)
             continue
-        line, setting_num = re.findall(r'\w+', i), []
+        line, setting_num = re.findall(r"[a-zA-Z0-9._]+", i), []
         setting_name = line[0]
         for j in range(1, len(line), 2):
-            if line[j].isdigit():
-                print(line[j])
-                if float(line[j]) == int(line[j]):
-                    setting_num.append(int(line[j]))
-                else:
-                    setting_num.append(float(line[j]))
+            current = Check(line[j]).make_bool
+            if Check(line[j]).isfloat:
+                setting_num.append(float(line[j]))
+            elif line[j].isdigit():
+                setting_num.append(int(line[j]))
+            elif current:
+                print(current)
+                print('hello')
+                setting_num.append(current)
             else:
                 setting_num.append(line[j])
         settings.update({setting_name: setting_num})
     setting_encoded.close()
-    if settings['automatic'][0] == 0:
-        settings.update({'automatic': [False]})
-    elif settings['automatic'][0] == 1:
-        settings.update({'automatic': [True]})
+    print(repr(settings))
+    # if settings['automatic'][0] == 0:
+    #     settings.update({'automatic': [False]})
+    # elif settings['automatic'][0] == 1:
+    #     settings.update({'automatic': [True]})
     canvas = Canvas(tk, width=settings['sos'][0] * 8, height=settings['sos'][0] * 8)
     if settings['automatic'][0]:
         canvas.pack()

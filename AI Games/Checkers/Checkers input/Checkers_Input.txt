@@ -1,8 +1,21 @@
+# Size of squares this will effect the size of each individual square of the board is so change to whatever your
+# computer can handle if you want
 sos = 130
+
+# Size of board this is ab sb x sb sized board keep at 8 this will break if changed currently
 sb = 8
-td = 0
-automatic = 1
+
+# Time Delay between moves
+td = 0.7
+
+# extra settings for automating, Mainly just for tkinter on/off switch
+# 0 for off
+# 1 for on
+automatic = True
+
 # Color represents the colors used when making the tkinter board, first two colors for board second two for pieces,
 # color for first board color, color_1 for second board color, color_2 for top team, color_3 for bottom team
 color = black, color_1 = white, color_2 = magenta, color_3 = cyan
+
+# Amount of rounds that will be played by the AI
 game_length = 100
