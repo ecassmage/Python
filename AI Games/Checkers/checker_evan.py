@@ -59,7 +59,6 @@ class Check:
 
 class BoardSquare:
     def __init__(self, colour_1, colour_2, size_of_board, count_of_squares):
-        color = colour_1
         color_row = colour_2
         for x in range(size_of_board):
             if color_row == colour_2:
@@ -172,7 +171,7 @@ def moving_games(movement, rows, board, team, opponent, x, y, i):
             elif abs(row) == 2:
                 if moves in board[rows[row]] and abs(x - moves[0]) == 2 and abs(y - moves[1]) == 2 and \
                         moves not in team and moves not in opponent \
-                        and tuple(kill_move(team, opponent, i, moves)) in opponent:
+                        and tuple(kill_move(i, moves)) in opponent:
                     safe_moves.append(moves)
                     kill_moves.append(moves)
     return safe_moves, kill_moves
@@ -207,7 +206,7 @@ def all_possible_moves_that_can_be_made(board, team, opponent, color):
     return team_moves, kill_moves
 
 
-def kill_move(team, opponent, piece, move):
+def kill_move(piece, move):
     return int(((piece[0] - move[0]) / 2) + move[0]), int(((piece[1] - move[1]) / 2) + move[1])
 
 
@@ -293,7 +292,7 @@ def ai_decision_making(coordinates, code, team, opponent, color):
     del team[choice_piece]
     x, y = choice_piece
     if abs(x - move_move[0]) == 2 and abs(y - move_move[1]) == 2:
-        killed = tuple(kill_move(team, opponent, choice_piece, move_move))
+        killed = tuple(kill_move(choice_piece, move_move))
         if killed in opponent:
             del opponent[killed]
         else:
@@ -420,7 +419,7 @@ def round_control():
         games(coordinate_board, coded_board1, white_team1, black_team1, loosened_board)
 
 
-if __name__ == '__main__':
-    canvas, prev, settings, squares = pre_game_setup()
-    round_control()
-    end_game_write()
+# if __name__ == '__main__':
+canvas, prev, settings, squares = pre_game_setup()
+round_control()
+end_game_write()

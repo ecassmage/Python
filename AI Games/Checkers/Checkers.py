@@ -26,9 +26,31 @@ all_defined_boards, all_kill_moves, winner = {}, {}, []
 global settings
 
 
+class Check:
+
+    def __init__(self, value):
+        # self.dig = value
+        self.isfloat = self.float_check(value)
+        self.make_bool = self.making_bool(value)
+
+    @staticmethod
+    def float_check(value):
+        try:
+            if float(value) and value.find('.') == 1:
+                return True
+        except ValueError:
+            return False
+
+    @staticmethod
+    def making_bool(value):
+        if value == 'True':
+            return True
+        else:
+            return False
+
+
 class BoardSquare:
     def __init__(self, colour_1, colour_2, size_of_board, count_of_squares):
-        color = colour_1
         color_row = colour_2
         for x in range(size_of_board):
             if color_row == colour_2:
@@ -141,7 +163,7 @@ def moving_games(movement, rows, board, team, opponent, x, y, i):
             elif abs(row) == 2:
                 if moves in board[rows[row]] and abs(x - moves[0]) == 2 and abs(y - moves[1]) == 2 and \
                         moves not in team and moves not in opponent \
-                        and tuple(kill_move(team, opponent, i, moves)) in opponent:
+                        and tuple(kill_move(i, moves)) in opponent:
                     safe_moves.append(moves)
                     kill_moves.append(moves)
     return safe_moves, kill_moves
@@ -176,7 +198,7 @@ def all_possible_moves_that_can_be_made(board, team, opponent, color):
     return team_moves, kill_moves
 
 
-def kill_move(team, opponent, piece, move):
+def kill_move(piece, move):
     return int(((piece[0] - move[0]) / 2) + move[0]), int(((piece[1] - move[1]) / 2) + move[1])
 
 
@@ -262,7 +284,7 @@ def ai_decision_making(coordinates, code, team, opponent, color):
     del team[choice_piece]
     x, y = choice_piece
     if abs(x - move_move[0]) == 2 and abs(y - move_move[1]) == 2:
-        killed = tuple(kill_move(team, opponent, choice_piece, move_move))
+        killed = tuple(kill_move(choice_piece, move_move))
         if killed in opponent:
             del opponent[killed]
         else:
@@ -331,25 +353,30 @@ def pre_game_setup():
     setting_encoded, settings, squares = open('Checkers input\\Checkers_Input.txt', 'r'), {}, []
     for i in setting_encoded:
         if i[0] == '#' or i[0] == '\n':
-            print(repr(i))
+            if i[0] == '#':
+                print(i)
             continue
-        line, setting_num = re.findall(r'\w+', i), []
+        line, setting_num = re.findall(r"[a-zA-Z0-9._]+", i), []
         setting_name = line[0]
         for j in range(1, len(line), 2):
-            if line[j].isdigit():
-                print(line[j])
-                if float(line[j]) == int(line[j]):
-                    setting_num.append(int(line[j]))
-                else:
-                    setting_num.append(float(line[j]))
+            current = Check(line[j]).make_bool
+            if Check(line[j]).isfloat:
+                setting_num.append(float(line[j]))
+            elif line[j].isdigit():
+                setting_num.append(int(line[j]))
+            elif current:
+                print(current)
+                print('hello')
+                setting_num.append(current)
             else:
                 setting_num.append(line[j])
         settings.update({setting_name: setting_num})
     setting_encoded.close()
-    if settings['automatic'][0] == 0:
-        settings.update({'automatic': [False]})
-    elif settings['automatic'][0] == 1:
-        settings.update({'automatic': [True]})
+    print(repr(settings))
+    # if settings['automatic'][0] == 0:
+    #     settings.update({'automatic': [False]})
+    # elif settings['automatic'][0] == 1:
+    #     settings.update({'automatic': [True]})
     canvas = Canvas(tk, width=settings['sos'][0] * 8, height=settings['sos'][0] * 8)
     if settings['automatic'][0]:
         canvas.pack()

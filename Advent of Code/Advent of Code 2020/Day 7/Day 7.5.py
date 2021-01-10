@@ -47,7 +47,7 @@ def findContainer(collection, color):
                 findContainer(collection, b.color)
 
 
-file = open("E:\\Advent\\Day 7 Send.txt")
+file = open("input.txt")
 str = file.readline()
 bags = []
 

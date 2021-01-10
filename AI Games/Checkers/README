@@ -1,0 +1,4 @@
+Running Python 3.8
+
+This is a Checkers AI that can make basic decision making like whether to make an attack or not or if the position it
+wants to move to is a dangerous move or not.
