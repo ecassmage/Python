@@ -68,7 +68,7 @@ def cup_counting(x):
         x.pop(0)
 
 
-for line in open('E:\\Advent\\Advent of Code\\Advent of Code 2020\\Day 23\\input.txt').readlines():
+for line in open('input.txt').readlines():
     cup_order_start = [int(i) for i in list(line)]
 returned = cup_counting(cup_change_game(increase(cup_order_start)))
 print("The Answer to Part 1 is: %s" % returned)

@@ -76,13 +76,14 @@ class DrawBoardPieces:
         self.pieces = []
         x1 = size / 3
         y1 = size / 3
-        x2 = size - size / 3
-        y2 = size - size / 3
+        x2 = size - x1
+        y2 = size - y1
+
         for number, character in enumerate(code_make):
             if number % game_sizing == 0 and number != 0:
                 x1 = size / 3
                 y1 = y1 + size
-                x2 = size - size / 3
+                x2 = size - x1
                 y2 = y2 + size
             elif number == 0:
                 pass
