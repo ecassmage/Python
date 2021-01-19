@@ -1,3 +1,9 @@
+"""
+————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+This is meant to test a Double Linked list I was writing as an importable module and was testing some methods I made for
+it matching its speed against a function by interacting directly with the attributes instead of intermediary methods
+————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+"""
 from Linked_Lists import doubly_dict
 
 
@@ -63,9 +69,10 @@ for i in range(len(list_base) + 1, 1000001):
     list_base.append(i)
 # print(list_base)
 list_base_dict, hello = doubly_dict(list_base)
-print(hello)
-key = hello.key_find(15)
-print(list_base_dict.x__dict__[1])
+# print(hello)
+# key = hello.key_find(15)
+# hell = hello.delete(9)
+
 answer = game(list_base[0], list_base_dict, 10000000)
 print(answer)
 print(f"The Answer to Part 2 is: {answer.next.value * answer.next.next.value}")

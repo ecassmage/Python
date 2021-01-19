@@ -96,7 +96,7 @@ def final_thoughts(x):
             continue
 
 
-for line in open('E:\\Advent\\Advent of Code\\Advent of Code 2020\\Day 19\\input.txt').readlines():
+for line in open('input.txt').readlines():
     line = line.replace('\n', '')
     line = line.replace('"', '')
     terms = []
