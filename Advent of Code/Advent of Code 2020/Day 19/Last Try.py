@@ -100,7 +100,7 @@ def finish_product(x, y, z):
     return finished_product
 
 
-for line in open('E:\\Advent\\Advent of Code\\Advent of Code 2020\\Day 19\\sample.txt').readlines():
+for line in open('sample.txt').readlines():
     line = line.replace('\n', '')
     line = line.replace('"', '')
     terms = []

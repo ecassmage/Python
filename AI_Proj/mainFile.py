@@ -1,0 +1,3 @@
+import human
+
+human.check()

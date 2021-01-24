@@ -1,4 +1,4 @@
-from custom import isfloat, isbool, tobool, bubble_sort, issorted, fizzbuzz
+from custom import isfloat, isbool, bubble_sort, issorted, fizzbuzz
 import random
 a = '1.9'
 b = '5'

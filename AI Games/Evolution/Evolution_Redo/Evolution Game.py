@@ -479,8 +479,10 @@ History record is similar to round_count but is called only after all moves for 
 records that need to be kept for longer periods of time are calculated here then stored into list boxes
 """
 
-"""All variables that are initialized as global from the get go are given a defined start value here as a centralized
-area for better organization"""
+"""
+All variables that are initialized as global from the get go are given a defined start value here as a centralized
+area for better organization
+"""
 
 
 def define_all_globals():
@@ -491,11 +493,15 @@ def define_all_globals():
 
 
 global information_label, historical_records, evolution_trends
-"""All variables that are initialized as global from the get go are given a defined start value here as a centralized
-area for better organization"""
+"""
+All variables that are initialized as global from the get go are given a defined start value here as a centralized
+area for better organization
+"""
 
-"""Initializing the game dunno it did more but I moved some of its systems into other functions so it doesn't do quite
-that much and is more of an intermediary"""
+"""
+Initializing the game dunno it did more but I moved some of its systems into other functions so it doesn't do quite
+that much and is more of an intermediary
+"""
 
 
 def initialization_of_game():
@@ -508,19 +514,27 @@ def initialization_of_game():
     return
 
 
-"""Initializing the game dunno it did more but I moved some of its systems into other functions so it doesn't do quite
-that much and is more of an intermediary"""
+"""
+Initializing the game dunno it did more but I moved some of its systems into other functions so it doesn't do quite
+that much and is more of an intermediary
+"""
 
-"""Clean the board of all objects"""
+"""
+Clean the board of all objects
+"""
 
 
 def clean_board():
     main_win.delete('all')
 
 
-"""Clean the board of all objects"""
+"""
+Clean the board of all objects
+"""
 
-"""Stores some information for the history_record here to be then moved to history_record after completion"""
+"""
+Stores some information for the history_record here to be then moved to history_record after completion
+"""
 
 
 def tally():
@@ -536,7 +550,9 @@ def tally():
             evolution_scoreboard['speed'].update({human.speed: evolution_scoreboard['speed'][human.speed] + 1})
 
 
-"""Stores some information for the history_record here to be then moved to history_record after completion"""
+"""
+Stores some information for the history_record here to be then moved to history_record after completion
+"""
 
 """
 main_game function dunno its more of a secondary main function which acts like a centralized function for main 

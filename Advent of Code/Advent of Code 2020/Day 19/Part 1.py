@@ -21,30 +21,14 @@ all_possibilities = []
 
 
 def defeck(x):
-    # print("X", x)
-    something = False
     term_good.append('(')
     for section in x:
-        # print(section)
-        # if section == '|':
-        #     term_good.append('/')
         if isinstance(section, list):
             defeck(section)
         else:
             term_good.append(section)
-
-            something = True
-        # if section == '|':
-        #     term_good.append('/')
-    # if something:
-    #     term_good.append('/')
     term_good.append(')')
     return term_good
-
-
-# def defook(x):
-#     for sector in x:
-#         if sector == '|':
 
 
 def parsing(x):
@@ -96,7 +80,7 @@ def final_thoughts(x):
             continue
 
 
-for line in open('input.txt').readlines():
+for line in open('sample.txt').readlines():
     line = line.replace('\n', '')
     line = line.replace('"', '')
     terms = []
@@ -181,6 +165,7 @@ hello = defeck(rules['0'])
 # hello.append('\b')
 # print("HELLO BOIsss", hello)
 the_search = ''.join(hello)
+print(the_search)
 # print(repr(the_search))
 # print(repr(search_terms))
 matches = []
@@ -192,7 +177,16 @@ for i in search_terms:
     matches.append(re.findall(r'\b(%s)\b' % the_search, i))
 matches = [x for x in matches if x != []]
 # print('matches', matches)
-
+term_good = []
+temp_list_1000 = defeck([[[[['b'], [['a'], [['b'], ['b'], '|', ['a'], ['b']], '|', ['b'], [[['a'], '|', ['b']], [['a'], '|', ['b']]]], '|', ['a'], [['b'], [['b'], ['b']], '|', ['a'], [['b'], ['b'], '|', ['a'], [['a'], '|', ['b']]]]], ['b'], '|', [[[['a'], ['a'], '|', ['a'], ['b']], ['a'], '|', [['b'], ['b']], ['b']], ['b'], '|', [[[['a'], '|', ['b']], ['a'], '|', ['b'], ['b']], ['a']], ['a']], ['a']]], [[[['b'], [['a'], [['b'], ['b'], '|', ['a'], ['b']], '|', ['b'], [[['a'], '|', ['b']], [['a'], '|', ['b']]]], '|', ['a'], [['b'], [['b'], ['b']], '|', ['a'], [['b'], ['b'], '|', ['a'], [['a'], '|', ['b']]]]], ['b'], '|', [[[['a'], ['a'], '|', ['a'], ['b']], ['a'], '|', [['b'], ['b']], ['b']], ['b'], '|', [[[['a'], '|', ['b']], ['a'], '|', ['b'], ['b']], ['a']], ['a']], ['a']], [['b'], [['b'], [['a'], [['b'], ['a']], '|', ['b'], [['a'], ['a']]], '|', ['a'], [['b'], [['a'], ['b'], '|', [['a'], '|', ['b']], ['a']], '|', ['a'], [['b'], ['a'], '|', ['a'], ['b']]]], '|', ['a'], [['b'], [[['a'], ['b'], '|', [['a'], '|', ['b']], ['a']], ['b'], '|', [[['a'], '|', ['b']], ['a'], '|', ['b'], ['b']], ['a']], '|', ['a'], [[['b'], ['a']], ['b'], '|', [['b'], ['a'], '|', ['b'], ['b']], ['a']]]]]]
+)
+send_over = ''.join(temp_list_1000)
+print(send_over)
+matches = []
+for i in search_terms:
+    # print(i)
+    matches.append(re.findall(r'\b(%s)\b' % send_over, i))
+matches = [x for x in matches if x != []]
 # kippy = group_parsing(hello)
 # kippy = [x for x in kippy if x != []]
 # kippy = final_thoughts(kippy)

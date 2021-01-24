@@ -139,7 +139,7 @@ def control_panel(control_1, control_2, control_3, control_4):
 
 
 tru_list, len_tru_list = [], []
-for line in open('E:\\Advent\\Advent of Code\\Advent of Code 2020\\Day 19\\sample.txt').readlines():
+for line in open('sample.txt').readlines():
     line = line.replace('\n', '')
     line = line.replace('"', '')
     terms = []
@@ -171,7 +171,7 @@ missing_link = ''.join(search_reformat(oatmeal['0'], oatmeal['0']))
 # print(eight, eleven)
 print(missing_link, '\n', search_terms, '\n', eight, '\n', eleven)
 
-exit()
+# exit()
 answers = control_panel(missing_link, search_terms, eight, eleven)
 print("The Answers are:", answers)
 print("The Answer is:", answers[-1])

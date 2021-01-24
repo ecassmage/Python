@@ -43,7 +43,7 @@ def build_heir(bags):
 
 
 bags_dictionary = {}
-for bag_hierarchy in open("input.txt"):
+for bag_hierarchy in open("../Advent of Code/Advent of Code 2020/Day 7/input.txt"):
     bag_hierarchy = bag_hierarchy.replace('.', '')
     freedom = re.findall('(.+) bags contain (.+)', bag_hierarchy)
     temp = freedom[0][1].split(', ')

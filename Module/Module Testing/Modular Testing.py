@@ -46,6 +46,29 @@
 #
 #
 # print(repr(num_to_eng(1000)))
-import custom
+from custom import number_to_word, fibonacci
+from logic import *
+import Tree
+print(fibonacci(0))
+print(fibonacci(1))
+print(fibonacci(2))
+print(fibonacci(123))
 
-print(custom.number_to_word(100020140342134))
+exit()
+a = 50
+b = 45
+c = 50
+d = 'a'
+e = 0
+f = 0
+g = 1
+print(number_to_word(100020140342134))
+if xor(a == c, a == c):
+    print("Hello")
+else:
+    print("Not Hello")
+print(a == c, a == c)
+if nor(e == g, e == g):
+    print("Hi Man")
+else:
+    print('Hi Girl')

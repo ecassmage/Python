@@ -77,13 +77,8 @@ def search_reformat(cheveux, cheveux_real):
     try:
         for section in cheveux:
             if isinstance(section, list):
-                # print("Fuck All cunts including you")
                 search_reformat(section, cheveux)
-            # elif section in bad_nums:
-            #     # print("Fuck All cunts including you")
-            #     continue
             else:
-                # print(search_compiled)
                 search_compiled.append(section)
     except RecursionError:
         print("Weird", cheveux_real)
@@ -166,7 +161,7 @@ def control_panel(w, x, y, z, long, short):
         pass
 
 
-for line in open('E:\\Advent\\Advent of Code\\Advent of Code 2020\\Day 19\\sample.txt').readlines():
+for line in open('sample.txt').readlines():
     line = line.replace('\n', '')
     line = line.replace('"', '')
     terms = []

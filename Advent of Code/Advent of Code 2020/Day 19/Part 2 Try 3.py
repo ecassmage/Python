@@ -23,7 +23,7 @@ def annoying_building(w, x, y=0, z=0):
 
 
 rules = {}
-inputting = open('E:\\Advent\\Advent of Code\\Advent of Code 2020\\Day 19\\input.txt')
+inputting = open('input.txt')
 for line in map(str.rstrip, inputting):
     if line == '':
         break
