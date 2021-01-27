@@ -1,4 +1,4 @@
-Files that are necessary to use this program are.
+Files that are necessary to use this program are.\n
 Folders - classes - all files inside
 files - Settings, mainFile.py, make_objects.py, newRoundScript.py
 Not Necessary Files are just some tests of alternate methods I wanted to try but they usually didn't pan out.
