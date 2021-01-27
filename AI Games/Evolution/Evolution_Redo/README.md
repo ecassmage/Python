@@ -1,1 +1,1 @@
-THis needs the module file as well program alone won't work
+This needs the file in the module folder as well program alone won't work.
