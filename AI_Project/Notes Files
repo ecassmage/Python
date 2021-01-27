@@ -1,0 +1,126 @@
+This is just a bunch of notes nothing important
+
+Human Proximity searching algorithm
+First step is to hash the food objects out into their x coordinates.
+(Possibly make it hash out the (x, y) coordinate for faster fetching) X
+(Probably better to nest a second hash inside of the x_axis hash to afford for only looking at food objects inside of
+the sphere at least on the x_axis
+
+                           O
+                %%t%%ttO:t%%%%%%t             X
+            t@8Xt::;;:%@X:: O.:;S88S
+          tSS;. .. .. .%X ..:  ...:%S%
+       :SS:.. .... ....tX . ...... ..:%X
+      :8; ...  .. . .  tS  ..  .. . .  :8t
+     ;X:.   .  .   ..  tS. ..  ..  ..  .:S%
+    :@%                 tX             O  t8;
+   %@                  tS  ..  ..   . . .  %@
+   8; .... ... ... ....tX ........ ... ... t8%
+  Xt:  ..  ..  ..  ..  tS  ..  .  . .  ..  ;t@                 X
+  X.:   .   .   .   .  tS. .   ..  ..  . . ::%%
+ %%::................. tX ..O .... ....... ::;X
+ X;.:   .   .   .   .  tS  ..  ..  ..   .  ::.@
+X8888X@@@XX@@X@@@X@@@X@88X@X@XX@@XX@@XX@@X@@8@88
+ 8tS8...:.:.:..::..::.t8@..::.:::.:.:.:.:..SX;8
+ S%.; .... ... ... .. .tX .... ... ... ... ::;@    X
+  X.: ... ... ... . .. tX  .. ... ... ... .::%%
+  X;:   .   .   .  ..  tS . .  ..   .   .  .:@
+   8; ................ tX ................ :@t
+   XS  ..   .   .   .  tS  ..  .   ..  ..  t8
+   :8t .. ........ ....tX. ... .... .. .. ;8;
+    :%S..  ..  ..  ..  tS  ..  ..  ..  ..%S
+      t@:   .   .  .   tS . .  ..  . . .X%
+       ;X%.............tX ........ ...tXt
+         :%St.  .   .  %S  ..  .  .;S%
+            X8@t;:;;;;XX@;:;;:;;tX8@t
+               %S%%tt:;X@::;t%%%%
+               O
+_______________________________________________
+
+
+                            X
+|                %%t%%ttO:t%%%%%%t             X
+|            t@8Xt::;;:%@X:: O.:;S88S
+|          tSS;. .. .. .%X ..:  ...:%S%
+|       :SS:.. .... ....tX . ...... ..:%X
+|      :8; ...  .. . .  tS  ..  .. . .  :8t
+|     ;X:.   .  .   ..  tS. ..  ..  ..  .:S%
+|   :@%                 tX             O  t8;
+|   %@                  tS  ..  ..   . . .  %@
+|   8; .... ... ... ....tX ........ ... ... t8%
+|  Xt:  ..  ..  ..  ..  tS  ..  .  . .  ..  ;t@                 X
+|  X.:   .   .   .   .  tS. .   ..  ..  . . ::%%
+| %%::................. tX ..O .... ....... ::;X
+| X;.:   .   .   .   .  tS  ..  ..  ..   .  ::.@
+|X8888X@@@XX@@X@@@X@@@X@88X@X@XX@@XX@@XX@@X@@8@88
+| 8tS8...:.:.:..::..::.t8@..::.:::.:.:.:.:..SX;8
+| S%.; .... ... ... .. .tX .... ... ... ... ::;@    X
+|  X.: ... ... ... . .. tX  .. ... ... ... .::%%
+|  X;:   .   .   .  ..  tS . .  ..   .   .  .:@
+|   8; ................ tX ................ :@t
+|   XS  ..   .   .   .  tS  ..  .   ..  ..  t8
+|   :8t .. ........ ....tX. ... .... .. .. ;8;
+|    :%S..  ..  ..  ..  tS  ..  ..  ..  ..%S
+|      t@:   .   .  .   tS . .  ..  . . .X%
+|       ;X%.............tX ........ ...tXt
+|         :%St.  .   .  %S  ..  .  .;S%
+|            X8@t;:;;;;XX@;:;;:;;tX8@t
+|               %S%%tt:;X@::;t%%%%
+                X
+
+
+Next a perimeter needs to be made for the Humans so as to understand what is close enough to count.
+Perimeter formula is x^2 + y^2 <= obj.sense^2 -> This will determine if the coordinate is within the humans sphere of influence
+the next step is to go through the closest
+
+for p_x loop range(human.x-sense, human.x+sense){  // p_x is the x_axis point currently being looked at. O(n)
+    if p_x found in food_dict:  // O(1)
+        y_max = ceiling(sqrt(human.sense^2 - (p_x - human.x)^2))  // y_max can be both positive and negative O(1)
+        if len(foods_dict[p_x]) < y_max * 2{
+            for p_food in food_dict[p_x]{
+                if abs(human.y - p_food) <= y_max{
+
+                }
+            }
+        }
+        else{
+            for p_y in range(human.y - y_max, human.y + y_max){
+
+            }
+        }
+}
+
+store_applicable = {}
+for p_x loop range(human.x-sense, human.x+sense){  // p_x is the x_axis point currently being looked at. O(n)
+    if p_x found in food_dict{  // O(1)
+        store_applicable.update(food_dict[p_x])  // O(1)
+    }
+}
+
+
+Dunno if this will work but what if I had a program which managed the processors,
+each processor would go call a function which went to fetch the data needed from
+mainFile program then sent each processor on their way to complete their tasks.
+This would circumvent the pesky dict not accepted annoyance that was plaguing me
+by pulling the dicts in a different section.
+
+This is the old search I shall leave it here for no reason
+         print(self.window.coords(self.window.find_closest(self.x, self.y, halo=10)))
+         for checking_the_x in range(self.x - self.sense, self.x + self.sense):
+             if checking_the_x in food_coordinate_dict:
+                 y_range = math.ceil(math.sqrt(self.sense ** 2 - (checking_the_x - self.x) ** 2))
+                if y_range * 2 > len(food_coordinate_dict[checking_the_x]):
+                     for checking_the_y in food_coordinate_dict[checking_the_x]:
+                         if (checking_the_x - self.x) ** 2 + (checking_the_y - self.y) ** 2 <= self.sense ** 2:
+                             self.Target = food_coordinate_dict[checking_the_x][checking_the_y]
+                             self.direction = self.Target.xy
+                             return
+                 else:
+                     for checking_the_y in range(self.y - y_range, self.y + y_range + 1):
+                         if checking_the_y in food_coordinate_dict[checking_the_x] and\
+                                 (checking_the_x - self.x) ** 2 + (checking_the_y - self.y) ** 2 <= self.sense ** 2:
+                             self.Target = food_coordinate_dict[checking_the_x][checking_the_y]
+                             self.direction = self.Target.xy
+                             return
+         return
+
