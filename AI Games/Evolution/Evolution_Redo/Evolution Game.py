@@ -3,15 +3,16 @@ from copy import copy
 import random
 import time
 import Evol_Module
+# import tensorflow as tf
 Hello = 100
 
 
 '''___________________________________ Initial Variable Initialization Here _________________________________________'''
-WIDTH, HEIGHT = 750, 750
+WIDTH, HEIGHT = 1000, 1000
 Humans, Foods, Foods_sorted, New_Humans, historical = [], [], {}, [], {}
 evolution_scoreboard = {'sense': {}, 'speed': {}}
 color_energy = {'Red': 40, 'Blue': 50, 'Green': 75, 'Purple': 90}
-initial_game_settings = {'humans': 100, 'foods': 1000, 'energy': 250, 'max_energy': 400, 'speed': 10, 'sense': 10,
+initial_game_settings = {'humans': 1000, 'foods': 4000, 'energy': 250, 'max_energy': 400, 'speed': 10, 'sense': 10,
                          'fps': 0, 'size_human': 4}
 global year, mass_extinction, oldest_human, name_of_human, history_humans, history_food, largest_children_count
 global name_of_oldest, deaths
@@ -80,8 +81,9 @@ class Human:
                 self.survival()
         """This is to check if the human is against the wall after eating its fill"""
         """This for loop decides what move will be made whether to go for food, to search for food or to go home"""
-        for i in range((self.moves_remaining + 1) * 3):
+        for i in range((self.moves_remaining + 1)):
             self.coordinate_control()  # Go to the coordinate_control method, just for organizational purposes
+        self.win.update()
         """This for loop decides what move will be made whether to go for food, to search for food or to go home"""
         """Check how much energy will be taken after each move"""
         self.energy -= 5 + (self.speed/10) ** 2 + (self.sense / 10)
@@ -97,7 +99,7 @@ class Human:
                 self.eat_food()
         elif self.chosen_coordinate == (self.x, self.y):
             self.pick_coordinate()
-        self.re_draw_position()
+        # self.re_draw_position()
 
     def decision_coordinate(self):
         if self.survive_the_round is None:
@@ -175,13 +177,17 @@ class Human:
         if movement == 'x_axis':
             if move_x > 0:
                 self.x += 1
+                self.win.move(self.sprite, 1, 0)
             else:
                 self.x -= 1
+                self.win.move(self.sprite, -1, 0)
         else:
             if move_y > 0:
                 self.y += 1
+                self.win.move(self.sprite, 0, 1)
             else:
                 self.y -= 1
+                self.win.move(self.sprite, 0, -1)
         self.xy = (self.x, self.y)
 
     def re_draw_position(self):
@@ -574,7 +580,7 @@ def main_game():
             for human in Humans:
                 human.draw()
                 round_count()
-            main_win.update()
+            # main_win.update()
             for human in reversed(Humans):
                 if len(Foods) == 0:
                     if human.has_food is True:
