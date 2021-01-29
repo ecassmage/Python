@@ -62,7 +62,6 @@ def initialize_new_humans(humans_list, name, canvas):
         if random.randrange(100) > 50:
             i, name = mo.create_human(temp_empty, 1, canvas, name)
             i = i[0]
-            # for i in temp_empty:
             i.speed = human_parent.speed
             i.sense = human_parent.sense
             sense_rand = random.randrange(100)

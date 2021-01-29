@@ -107,12 +107,23 @@ class Human:
 
     """ ▲ ______________ Movement section ______________ ▲ """
 
+    """ ▼ ________________ Eating Habit ________________ ▼ """
+
     def accepting_herbivore(self, food_dictionary):
+        if settings['dev']:  # This is a dev section
+            self.colorRGB = (251, 160, 255)
+            self.colorHex = '#FBA0FF'
+            self.window.itemconfig(self.sprite, outline=self.colorHex, fill=self.Target.color)
+            # self.re_draw_position()
+            # self.window.update()
         self.energy += self.Target.energy
-        self.Target.delete(food_dictionary)
+        food_dictionary = self.Target.delete(food_dictionary)
         self.Target = None
         self.eaten = True
         self.move_to_safe_zone()
+        return food_dictionary
+
+    """ ▲ ________________ Eating Habit ________________ ▲ """
 
     """ ▼ _________________ Check Hits _________________ ▼ """
 
@@ -123,8 +134,10 @@ class Human:
                     self.y <= settings['human']['size'] or \
                     self.y >= settings['window']['HEIGHT'] - settings['human']['size']:
                 self.back_at_base = True
-                return
-        elif self.Target is not None and self.Target.y in food_dictionary[self.Target.x]:
+                return food_dictionary
+        elif self.Target is not None and \
+                self.Target.x in food_dictionary and \
+                self.Target.y in food_dictionary[self.Target.x]:
             if abs(self.x - self.Target.x) <= self.Target.size and abs(self.y - self.Target.y) <= self.Target.size:
                 self.accepting_herbivore(food_dictionary)  # Special stuff happens to those who are eaten
                 """Eat and Delete the Food, Possibly move them to a new section """
@@ -133,7 +146,7 @@ class Human:
                 """Scratch That this is for if you get to the food but it was already eaten"""
         else:
             self.find_move(food_dictionary)
-        return
+        return food_dictionary
 
     def update_coordinates(self, food_dictionary):
         difference_x, difference_y = self.direction[0] - self.x, self.direction[1] - self.y
@@ -156,7 +169,7 @@ class Human:
         if self.xy == self.direction:
             self.direction = None
             self.register_if_hit(food_dictionary)
-        return
+        return food_dictionary
 
     """ ▲ _________________ Check Hits _________________ ▲ """
 
@@ -190,9 +203,9 @@ def run_algorithm(self, food_dictionary, list_of_humans):
     self.find_move(food_dictionary)
     for _ in range(self.speed):
         if self.back_at_base is False:
-            self.update_coordinates(food_dictionary)
+            food_dictionary = self.update_coordinates(food_dictionary)
         else:
-            self.window.update()
+            # self.window.update()
             return True
     self.energy -= (self.speed + self.sense/5)/10
     self.window.update()

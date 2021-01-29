@@ -29,7 +29,10 @@ class Food:
     def delete(self, food_dict):
         self.window.delete(self.sprite)
         del food_dict[self.x][self.y]
+        if len(food_dict[self.x]) == 0:
+            del food_dict[self.x]
         del self
+        return food_dict
 
     def clean_board(self):
         self.window.delete(self.sprite)

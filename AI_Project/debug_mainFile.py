@@ -1,19 +1,24 @@
 """
 Developer: Evan Morrison
-Program Name: AI_Project/Debugging
+Program Name: AI_Project/AI Evolution
 Version: 1.0.0
 Date: 2021/01/27
-Debug: Testing Purposes Only
 """
 import human
-# import food
+import food
 import newRoundScript
 from tkinter import *
 import json
 import make_objects
 import time
-import debug_mainFile
 settings = json.load(open("Settings", 'r'))
+
+
+def debug_testing(dev_win, dev_canvas):
+    print("This is for Debugging")
+    food_dictionary_dev = {1234: {1234: food.Food(dev_canvas, 1234, 1234, 'Purple')}}
+    food_dictionary_dev[1234][1234].delete(food_dictionary_dev)
+    return
 
 
 def initial_setup():
@@ -53,23 +58,15 @@ def main_loop(human_list, food_dict):
     return got_to_end, food_dict
 
 
-def __main__(canvas):
+def __main__(dev_win, dev_canvas):
     name = 0
     humans, foods = [], {}
-    humans, name = initialize_humans(humans, settings['starting']['humans'], canvas, name)
-    foods = initialize_food(foods, settings['starting']['food'], canvas)
+    humans, name = initialize_humans(humans, settings['starting']['humans'], dev_canvas, name)
+    foods = initialize_food(foods, settings['starting']['food'], dev_canvas)
     while True:
         print(f"The Food this round starts at: {len(foods)}")
         print(f"The amount of humans starting alive is: {len(humans)}", end=' ')
         humans, foods = main_loop(humans, foods)
         print(f"The size of the humans pool that survived is: {len(humans)}")
-        foods, humans, name, canvas = newRoundScript.clean_up(foods, humans, canvas, name)
-        canvas.update()
-
-
-if __name__ == "__main__":
-    game_win, game_canvas = initial_setup()
-    if settings['dev']:
-        debug_mainFile.__main__(game_win, game_canvas)
-    else:
-        __main__(game_canvas)
+        foods, humans, name, dev_canvas = newRoundScript.clean_up(foods, humans, dev_canvas, name)
+        dev_canvas.update()

@@ -46,14 +46,26 @@
 #
 #
 # print(repr(num_to_eng(1000)))
-from custom import number_to_word, fibonacci
-from logic import *
-import Tree
-print(fibonacci(0))
-print(fibonacci(1))
-print(fibonacci(2))
-print(fibonacci(123))
+from Module.Modules import custom
+# from logic import *
+# import Tree
+print(custom.fibonacci(0))
+# print(fibonacci(1))
+# print(fibonacci(2))
+# print(fibonacci(123))
 
+
+def fibonacci(x, lis={}):
+    if x in lis:
+        return lis[x]
+    if x <= 1:
+        return 1
+    xy = fibonacci(x-1) + fibonacci(x-2)
+    lis.update({x: xy})
+    return xy
+
+
+fibonacci(10)
 exit()
 a = 50
 b = 45
@@ -62,13 +74,13 @@ d = 'a'
 e = 0
 f = 0
 g = 1
-print(number_to_word(100020140342134))
-if xor(a == c, a == c):
-    print("Hello")
-else:
-    print("Not Hello")
-print(a == c, a == c)
-if nor(e == g, e == g):
-    print("Hi Man")
-else:
-    print('Hi Girl')
+# print(number_to_word(100020140342134))
+# if xor(a == c, a == c):
+#     print("Hello")
+# else:
+#     print("Not Hello")
+# print(a == c, a == c)
+# if nor(e == g, e == g):
+#     print("Hi Man")
+# else:
+#     print('Hi Girl')

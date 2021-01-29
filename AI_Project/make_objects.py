@@ -4,10 +4,12 @@ Program Name: AI_Project/make_objects
 Version: 1.0.0
 Date: 2021/01/27
 """
+import json
+import random
+
 import food
 import human
-import random
-import json
+
 settings = json.load(open('Settings'))
 
 
