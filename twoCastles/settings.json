@@ -1,0 +1,39 @@
+{
+  "window": {
+    "screen": {
+      "width": 2560,
+      "height": 1400
+    },
+    "fps": 60,
+    "unit_size": 30
+  },
+  "red": {
+
+  },
+  "blue": {
+
+  },
+  "castle": {
+    "delay_recruit": 0.25
+  },
+  "soldiers": {
+    "footman": {
+      "hp": 100,
+      "speed": 1,
+      "armor": 6,
+      "cost": 100,
+      "damage": 10,
+      "range": 15,
+      "cooldown": 0.25
+    },
+    "archer": {
+      "hp": 75,
+      "speed": 1,
+      "armor": 1,
+      "cost": 120,
+      "damage": 20,
+      "range": 200,
+      "cooldown": 2
+    }
+  }
+}

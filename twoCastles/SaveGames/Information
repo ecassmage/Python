@@ -1,0 +1,4 @@
+This folder will at some point hold some save game information but at the moment I don't want to set it up
+as there are more import things to learn about pygame
+
+I want to setup a system where I can properly save and reload previous versions of games.
