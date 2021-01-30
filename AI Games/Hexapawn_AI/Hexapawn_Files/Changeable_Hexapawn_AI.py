@@ -7,7 +7,7 @@ import random
 import re
 # End of Imports
 # Start Program constant variables
-game_size = 6  # board size
+game_size = 3  # board size
 game_length = 1000000  # amount of rounds that will be simulated
 percent_turn_off = 95  # when program will stop notifying about time milestones
 info_rep = 1000  # amount of rounds per information dump

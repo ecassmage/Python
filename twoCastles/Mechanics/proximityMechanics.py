@@ -1,5 +1,5 @@
 import math
-from Mechanics import miscMechanics
+from Mechanics import miscMechanics, castleMechanics
 from classes import unitsClass
 import pygame
 import json
@@ -7,15 +7,14 @@ settings = json.load(open('settings.json', 'r'))
 
 
 def proximity_check(team, sprite, enemy_castle):
-    opponents = enemy_castle.soldiers
     if sprite.type != 'projectile':
-        for so in opponents:  # 'so' stands for sprite opponent
+        for so in enemy_castle.soldiers:  # 'so' stands for sprite opponent
             if so.type != 'projectile':
                 if proximity(sprite, so):
                     sprite.hold = True
                     if sprite.ranged is False:
-                        miscMechanics.release_attack(sprite, so, opponents, team)
-                    elif miscMechanics.check_cooldown(sprite):
+                        miscMechanics.release_attack(sprite, so, enemy_castle, team)
+                    else:
                         miscMechanics.ranged_generation(sprite, team)
                     return
         else:
@@ -24,38 +23,30 @@ def proximity_check(team, sprite, enemy_castle):
                 if sprite.ranged:
                     miscMechanics.ranged_generation(sprite, team)
                 else:
-                    miscMechanics.attack_castle(sprite, enemy_castle)
+                    castleMechanics.attack_castle(sprite, enemy_castle)
                 return
             else:
                 sprite.hold = False
             return
     else:
-        projectile_proximity(team, sprite, opponents, enemy_castle)
+        projectile_proximity(team, sprite, enemy_castle)
 
 
-def projectile_proximity(team, sprite, opponents, enemy_castle):
-    for so in opponents:  # so stands for sprite opponent
+def projectile_proximity(team, sprite, enemy_castle):
+    for so in enemy_castle.soldiers:  # so stands for sprite opponent
         if so.type != 'projectile':
             if proximity(sprite, so):
-                miscMechanics.release_attack(sprite, so, opponents, team)
+                miscMechanics.release_attack(sprite, so, enemy_castle, team)
                 team.soldiers.pop(team.soldiers.index(sprite))
                 return
     else:
         if proximity(sprite, enemy_castle):
-            miscMechanics.attack_castle(sprite, enemy_castle)
+            castleMechanics.attack_castle(sprite, enemy_castle)
             team.soldiers.pop(team.soldiers.index(sprite))
             return
         if sprite.distance_traveled > sprite.max_range:
             team.soldiers.pop(team.soldiers.index(sprite))
             return
-
-
-def castle_can_attack(castle, opponent):
-    enemies = opponent.soldiers
-    for soldier in enemies:
-        if distance(castle, soldier) <= castle.range and miscMechanics.check_cooldown(castle):
-            miscMechanics.ranged_generation(castle, castle)
-    return
 
 
 def proximity(sprite, target):

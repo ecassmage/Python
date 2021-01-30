@@ -12,17 +12,19 @@ class Castle:
         self.spawn_coordinate = (self.x + 22.5, self.y + 45)
         self.team, self.type = team, 'castle'
         self.hp = settings['castle']['hp']
+        self.regeneration = settings['castle']['regeneration'] / settings['window']['fps']
         self.armor = settings['castle']['armor']
         self.range = settings['castle']['range']
         self.cooldown = settings['castle']['cooldown']
         self.attacked_last = settings['castle']['cooldown']
         self.bounds = bounds
-        self.coins = 500
+        self.coins = 1000
         self.coins_pot = 200
         self.score = 200
         self.recruitment_delay = settings['castle']['delay_recruit']
         self.lay_over = settings['castle']['delay_recruit']
         self.soldiers = []
+        self.total_soldiers = 0
         self.queue = []
         self.rectangle = self.image.get_rect(x=self.x, y=self.y)
 

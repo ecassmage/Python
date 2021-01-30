@@ -218,7 +218,6 @@ def advanced_check(moves_to_make, opponent, color, board_coord):
                          (individual[0] - 1, individual[1] - 1), (individual[0] + 1, individual[1] - 1)]
             diagonals = {0: 3, 1: 2, 2: 3, 3: 0}
             for adjacency_xy in adjacency:
-
                 if adjacency_xy in opponent:
                     adjacency_caught = adjacency.index(adjacency_xy)
                     opposite_adjacency = diagonals[adjacency_caught]

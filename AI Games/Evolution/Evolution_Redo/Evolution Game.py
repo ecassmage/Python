@@ -12,7 +12,7 @@ WIDTH, HEIGHT = 1000, 1000
 Humans, Foods, Foods_sorted, New_Humans, historical = [], [], {}, [], {}
 evolution_scoreboard = {'sense': {}, 'speed': {}}
 color_energy = {'Red': 40, 'Blue': 50, 'Green': 75, 'Purple': 90}
-initial_game_settings = {'humans': 1000, 'foods': 4000, 'energy': 250, 'max_energy': 400, 'speed': 10, 'sense': 10,
+initial_game_settings = {'humans': 50, 'foods': 750, 'energy': 250, 'max_energy': 400, 'speed': 10, 'sense': 10,
                          'fps': 0, 'size_human': 4}
 global year, mass_extinction, oldest_human, name_of_human, history_humans, history_food, largest_children_count
 global name_of_oldest, deaths

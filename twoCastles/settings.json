@@ -2,7 +2,9 @@
   "window": {
     "screen": {
       "width": 2560,
-      "height": 1400
+      "height": 1400,
+      "font_type": "freesansbold.ttf",
+      "font_size": 16
     },
     "fps": 60,
     "unit_size": 30
@@ -15,12 +17,13 @@
   },
   "castle": {
     "delay_recruit": 0.25,
-    "hp": 1000,
-    "armor": 95,
-    "damage": 25,
+    "hp": 1250,
+    "armor": 85,
+    "damage": 30,
     "armor_pierce": 8,
     "range": 400,
-    "cooldown": 1.25
+    "cooldown": 1,
+    "regeneration": 0.2
   },
   "soldiers": {
     "footman": {
@@ -38,8 +41,8 @@
       "speed": 1,
       "armor": 20,
       "cost": 120,
-      "damage": 20,
-      "armor_pierce": 1,
+      "damage": 16,
+      "armor_pierce": 4,
       "range": 200,
       "cooldown": 2
     },
@@ -55,6 +58,7 @@
     }
   },
   "dev": {
-    "cheat": false
+    "cheat": false,
+    "dev_tools": true
   }
 }

@@ -6,6 +6,8 @@ settings = json.load(open('settings.json', 'r'))
 
 
 def collect_taxes(castle):
+    if castle.coins_pot < 0:
+        castle.coins_pot = 0
     castle.coins += castle.coins_pot
     castle.coins_pot += 15
 
@@ -36,12 +38,14 @@ def choose_list(team):
 
 def cash_flow(team):
     choose_list(team)
-    if (pygame.time.get_ticks()/1000) - team.lay_over >= team.recruitment_delay:
+    if (pygame.time.get_ticks()/1000) - team.lay_over >= team.recruitment_delay and team.total_soldiers < 50:
         if team.coins >= settings['soldiers'][team.queue[0]]['cost']:
             team.coins -= settings['soldiers'][team.queue[0]]['cost']
             team.generate_new_soldier(team.queue[0])
             team.queue.pop(0)
             team.lay_over = (pygame.time.get_ticks()/1000)
+            team.total_soldiers += 1
+
     return
 
 
@@ -52,24 +56,27 @@ def check_if_dead(health):
         return False
 
 
-def attack_castle(attacker, attacked):
-    if check_cooldown(attacker):
-        damage_dealt = attacker.damage * (1 - attacked.armor/100)
-        if damage_dealt < 1:
-            damage_dealt = 1
-        attacked.hp -= damage_dealt
-        if check_if_dead(attacked):
-            print("WINNER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-            exit()
+# def attack_castle(attacker, attacked):
+#     if check_cooldown(attacker):
+#         damage_dealt = attacker.damage * (1 - attacked.armor/100)
+#         if damage_dealt < 1:
+#             damage_dealt = 1
+#         attacked.hp -= damage_dealt
+#         attacked.coins += 15
+#         attacked.score -= 1
+#         attacked.coins_pot -= 1
+#         if check_if_dead(attacked):
+#             print("WINNER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+#             exit()
 
 
-def release_attack(attacker, attacked, enemy_soldiers, team):
+def release_attack(attacker, attacked, enemy, team):
     if check_cooldown(attacker):
         damage_dealt = (attacker.damage * (1 - attacked.armor/100)) + attacker.armor_pierce
         if damage_dealt < 1:
             damage_dealt = 1
         attacked.hp -= damage_dealt
-        check_health(attacked, enemy_soldiers, team)
+        check_health(attacked, enemy, team)
 
 
 def projectile_attack(attacker, attacked, enemy_soldiers, team):
@@ -81,15 +88,17 @@ def projectile_attack(attacker, attacked, enemy_soldiers, team):
     check_health(attacked, enemy_soldiers, team)
 
 
-def check_health(attacked, enemy_soldiers, team):
+def check_health(attacked, enemy, team):
     if check_if_dead(attacked):
         more_money(team, attacked)
-        enemy_soldiers.pop(enemy_soldiers.index(attacked))
+        enemy.soldiers.pop(enemy.soldiers.index(attacked))
+        enemy.total_soldiers -= 1
 
 
 def ranged_generation(sprite, team):
-    if sprite.type == 'archer':
-        team.soldiers.append(unitsClass.Arrow(sprite.window, sprite.xy, sprite.team))
-    elif sprite.type == 'castle':
-        team.soldiers.append(unitsClass.CastleMissile(sprite.window, sprite.spawn_coordinate, sprite.team))
+    if check_cooldown(sprite):
+        if sprite.type == 'archer':
+            team.soldiers.append(unitsClass.Arrow(sprite.window, sprite.xy, sprite.team))
+        elif sprite.type == 'castle':
+            team.soldiers.append(unitsClass.CastleMissile(sprite.window, sprite.spawn_coordinate, sprite.team))
     return
