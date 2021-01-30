@@ -1,6 +1,6 @@
 import pygame
 import castleClass
-from Mechanics import initializeTeams, Idk__name__
+from Mechanics import initializeTeams, miscMechanics, proximityMechanics
 import time
 import json
 settings = json.load(open('settings.json', 'r'))
@@ -29,38 +29,61 @@ def moves(team, enemy):
     for soldat in team.soldiers:
         if soldat.type == 'projectile' or soldat.hold is False:
             soldat.movement()
-        soldat.window.blit(soldat.image, soldat.xy)
-        Idk__name__.proximity_check(team, soldat, enemy.soldiers)
+        proximityMechanics.proximity_check(team, soldat, enemy)
     team.coins += 0.1
 
 
 def sub_game_task(team_red, team_blue):
     moves(team_red, team_blue)
     moves(team_blue, team_red)
-    Idk__name__.cash_flow(team_red)
-    Idk__name__.cash_flow(team_blue)
+    miscMechanics.cash_flow(team_red)
+    miscMechanics.cash_flow(team_blue)
+    proximityMechanics.castle_can_attack(team_red, team_blue)
+    proximityMechanics.castle_can_attack(team_blue, team_red)
+
+
+def re_draw_soldiers(team):
+    for soldat in team.soldiers:
+        soldat.window.blit(soldat.image, soldat.xy)
+    return
+
+
+def draw_screen(window, team_red, team_blue):
+    window.fill((0, 0, 0))
+    # window.blit(bg_image, (0, 0))  # this is a background doesn't fit currently so it is disabled
+    window.blit(team_red.image, team_red.xy)
+    window.blit(team_blue.image, team_blue.xy)
+    re_draw_soldiers(team_blue)
+    re_draw_soldiers(team_red)
+    pygame.display.update()
+
+
+def cheat_mode(castle):
+    for _ in range(50):
+        castle.generate_new_soldier('archer')
 
 
 def game_loop(window, bg_image):
     running = True
     team_red, team_blue = initializeTeams.make__Castle(window)  # using an import
     clock = pygame.time.Clock()
+    fps = settings['window']['fps']
     event_timer = 0
+    if settings['dev']['cheat']:
+        cheat_mode(team_red)
     while running:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
-        window.fill((0, 0, 0))
-        window.blit(team_red.image, team_red.xy)
-        window.blit(team_blue.image, team_blue.xy)
+        """ ▼ centralized function designed for judging whether able to attack"""
         sub_game_task(team_red, team_blue)
-        pygame.display.update()
-        clock.tick(settings['window']['fps'])
+        """ ▼ does the drawing best, best to keep them together for immediate rendering"""
+        draw_screen(window, team_red, team_blue)
+        clock.tick(fps)
         if pygame.time.get_ticks()/1000 - event_timer >= 15:
-            team_blue.coins += 250
-            team_red.coins += 250
+            miscMechanics.collect_taxes(team_red)
+            miscMechanics.collect_taxes(team_blue)
             event_timer = pygame.time.get_ticks()/1000
-
 
 
 if __name__ == '__main__':

@@ -14,26 +14,47 @@
 
   },
   "castle": {
-    "delay_recruit": 0.25
+    "delay_recruit": 0.25,
+    "hp": 1000,
+    "armor": 95,
+    "damage": 25,
+    "armor_pierce": 8,
+    "range": 400,
+    "cooldown": 1.25
   },
   "soldiers": {
     "footman": {
       "hp": 100,
       "speed": 1,
-      "armor": 6,
+      "armor": 36,
       "cost": 100,
       "damage": 10,
+      "armor_pierce": 1,
       "range": 15,
       "cooldown": 0.25
     },
     "archer": {
       "hp": 75,
       "speed": 1,
-      "armor": 1,
+      "armor": 20,
       "cost": 120,
       "damage": 20,
+      "armor_pierce": 1,
       "range": 200,
       "cooldown": 2
+    },
+    "tank": {
+      "hp": 250,
+      "speed": 0.75,
+      "armor": 50,
+      "cost": 160,
+      "damage": 5,
+      "armor_pierce": 0,
+      "range": 15,
+      "cooldown": 0.75
     }
+  },
+  "dev": {
+    "cheat": false
   }
 }

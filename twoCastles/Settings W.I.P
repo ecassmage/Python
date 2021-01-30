@@ -1,7 +1,7 @@
 "tank": {
       "hp": 250,
       "speed": 0.5,
-      "armor": 10,
+      "armor": 85,
       "cost": 160,
       "damage": 5,
       "range": 15,
@@ -10,9 +10,15 @@
 "cheetah": {
       "hp": 60,
       "speed": 1.6,
-      "armor": 1,
+      "armor": 10,
       "cost": 150,
       "damage": 8,
       "range": 15,
       "cooldown": 0.06
     }
+
+
+
+
+
+damage -
