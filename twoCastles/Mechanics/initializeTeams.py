@@ -1,6 +1,6 @@
 """Why have this here, Well because it is ugly code that I don't really want to have to look at ever"""
 from Mechanics import boundsMechanics
-import castleClass
+from classes import castleClass
 import pygame
 import json
 settings = json.load(open('settings.json', 'r'))

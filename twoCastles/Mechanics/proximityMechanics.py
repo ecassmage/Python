@@ -1,6 +1,6 @@
 import math
 from Mechanics import miscMechanics
-import unitsClass
+from classes import unitsClass
 import pygame
 import json
 settings = json.load(open('settings.json', 'r'))
