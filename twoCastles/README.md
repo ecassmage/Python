@@ -5,3 +5,5 @@ and the Settings W.I.P files is also just a txt file holding future additions to
 .idea is also useless for getting the project to work. 
 
 This was built with Python 3.8 using the Pycharm IDE. Python 3.8 is needed to get this working most likely.
+
+Still Working on this as of February 2 2021, just slow because of University
