@@ -10,4 +10,3 @@ def bounds(shape_obj, coord):
     ref_x, ref_y = coord
     if w <= ref_x <= y and x <= ref_y <= z:
         return True
-

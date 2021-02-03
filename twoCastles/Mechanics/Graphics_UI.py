@@ -1,9 +1,6 @@
 import pygame
 import json
 settings = json.load(open('settings.json', 'r'))
-# triangle = pygame.draw.polygon(window, (210, 180, 140), [[x, y], [x - 10, y - 10], [x + 10, y - 10]], 5)
-
-# , (10, 10)
 
 
 class Fonts:
@@ -68,3 +65,13 @@ def blit_renders(fonts):
         fonts[font].window.blit(fonts[font].rendered_health, (fonts[font].x, fonts[font].y + fonts[font].size * 2))
         if settings['dev']['dev_tools']:
             fonts[font].window.blit(fonts[font].rendered_pot, (fonts[font].x, fonts[font].y + fonts[font].size * 3))
+
+
+def timer_font(window, tme):
+    font_timer = pygame.font.Font(settings['window']['screen']['font_type'], settings['window']['screen']['font_size'])
+    txt = f"Reinforcements in: {tme:.2f} Seconds"
+    rendered_timer = font_timer.render(txt, True, (255, 255, 255))
+    dif = font_timer.size('txt')[0]*(len(txt) - 3)
+    x = (settings['window']['screen']['width'] - dif) / 2
+    window.blit(rendered_timer, (x, 10))
+    # exit()

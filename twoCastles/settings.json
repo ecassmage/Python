@@ -1,4 +1,5 @@
 {
+  "fps": 60,
   "window": {
     "screen": {
       "width": 2560,
@@ -6,8 +7,14 @@
       "font_type": "freesansbold.ttf",
       "font_size": 16
     },
-    "fps": 60,
-    "unit_size": 30
+    "unit_size": 35,
+    "per_turn_soldiers": 15
+  },
+  "game": {
+    "reinforcements_delay": 30,
+    "cash": 1000,
+    "cash start": 200,
+    "gravity": 100
   },
   "red": {
 
@@ -28,7 +35,7 @@
   "soldiers": {
     "footman": {
       "hp": 100,
-      "speed": 1,
+      "speed": 25,
       "armor": 36,
       "cost": 100,
       "damage": 10,
@@ -36,9 +43,19 @@
       "range": 15,
       "cooldown": 0.25
     },
+    "cheetah": {
+      "hp": 55,
+      "speed": 50,
+      "armor": 4,
+      "cost": 200,
+      "damage": 8,
+      "armor_pierce": 2,
+      "range": 20,
+      "cooldown": 0.1
+    },
     "archer": {
       "hp": 75,
-      "speed": 1,
+      "speed": 28,
       "armor": 20,
       "cost": 120,
       "damage": 16,
@@ -48,17 +65,28 @@
     },
     "tank": {
       "hp": 250,
-      "speed": 0.75,
+      "speed": 22,
       "armor": 50,
       "cost": 160,
       "damage": 5,
       "armor_pierce": 0,
       "range": 15,
       "cooldown": 0.75
+    },
+    "catapult": {
+      "hp": 90,
+      "speed": 18,
+      "armor": 15,
+      "cost": 400,
+      "damage": 20,
+      "armor_pierce": 35,
+      "range": 600,
+      "cooldown": 8
     }
   },
   "dev": {
     "cheat": false,
-    "dev_tools": true
+    "dev_tools": true,
+    "no spawn": false
   }
 }

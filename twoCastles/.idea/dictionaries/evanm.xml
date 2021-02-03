@@ -5,6 +5,7 @@
       <w>buyables</w>
       <w>cooldown</w>
       <w>soldat</w>
+      <w>spawnable</w>
     </words>
   </dictionary>
 </component>
