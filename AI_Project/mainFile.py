@@ -5,7 +5,7 @@ Version: 1.0.0
 Date: 2021/01/27
 Debug: Testing Purposes Only
 """
-import human
+from classes import human
 # import food
 import newRoundScript
 from tkinter import *

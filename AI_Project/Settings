@@ -28,5 +28,5 @@
     "speed_strength": 1,
     "slow play": true
   },
-  "dev": true
+  "dev": false
 }

@@ -4,8 +4,7 @@ Program Name: AI_Project/AI Evolution
 Version: 1.0.0
 Date: 2021/01/27
 """
-import human
-import food
+from classes import human, food
 import newRoundScript
 from tkinter import *
 import json

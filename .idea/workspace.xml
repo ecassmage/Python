@@ -2,12 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a460573a-cf7e-4209-af29-d7de2ad187a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Github.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Github.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI Games/Checkers/Checkers.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI Games/Checkers/Checkers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI Games/Evolution/Evolution_Redo/Evolution Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI Games/Evolution/Evolution_Redo/Evolution Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI Games/Hexapawn_AI/Hexapawn_Files/Changeable_Hexapawn_AI.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI Games/Hexapawn_AI/Hexapawn_Files/Changeable_Hexapawn_AI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI_Project/.idea/AI_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Project/.idea/AI_Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI_Project/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Project/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI_Project/Not Necessary Files/Factorial Tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Project/Not Necessary Files/Factorial Tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI_Project/Settings" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Project/Settings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI_Project/debug_mainFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Project/debug_mainFile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI_Project/mainFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Project/mainFile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AI_Project/make_objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Project/make_objects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twoCastles/.idea/dictionaries/evanm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/twoCastles/.idea/dictionaries/evanm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twoCastles/Mechanics/castleMechanics.py" beforeDir="false" afterPath="$PROJECT_DIR$/twoCastles/Mechanics/castleMechanics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twoCastles/Mechanics/miscMechanics.py" beforeDir="false" afterPath="$PROJECT_DIR$/twoCastles/Mechanics/miscMechanics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twoCastles/Mechanics/proximityMechanics.py" beforeDir="false" afterPath="$PROJECT_DIR$/twoCastles/Mechanics/proximityMechanics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twoCastles/Mechanics/scoreSystem.py" beforeDir="false" afterPath="$PROJECT_DIR$/twoCastles/Mechanics/Graphics_UI.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/twoCastles/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/twoCastles/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twoCastles/classes/castleClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/twoCastles/classes/castleClass.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twoCastles/classes/projectiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/twoCastles/classes/projectiles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twoCastles/classes/unitsClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/twoCastles/classes/unitsClass.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/twoCastles/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/twoCastles/settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,22 +175,22 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1059" y="462" key="FileChooserDialogImpl/0.0.2560.1440/-1920.412.1920.1080@0.0.2560.1440" timestamp="1611843948207" />
-    <state width="2539" height="413" key="GridCell.Tab.0.bottom" timestamp="1612036495775">
+    <state width="2554" height="418" key="GridCell.Tab.0.bottom" timestamp="1612243816587">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="413" key="GridCell.Tab.0.bottom/0.0.2560.1440/-1920.412.1920.1080@0.0.2560.1440" timestamp="1612036495775" />
-    <state width="2539" height="413" key="GridCell.Tab.0.center" timestamp="1612036495775">
+    <state width="2554" height="418" key="GridCell.Tab.0.bottom/0.0.2560.1440/-1920.412.1920.1080@0.0.2560.1440" timestamp="1612243816587" />
+    <state width="2554" height="418" key="GridCell.Tab.0.center" timestamp="1612243816587">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="413" key="GridCell.Tab.0.center/0.0.2560.1440/-1920.412.1920.1080@0.0.2560.1440" timestamp="1612036495775" />
-    <state width="2539" height="413" key="GridCell.Tab.0.left" timestamp="1612036495775">
+    <state width="2554" height="418" key="GridCell.Tab.0.center/0.0.2560.1440/-1920.412.1920.1080@0.0.2560.1440" timestamp="1612243816587" />
+    <state width="2554" height="418" key="GridCell.Tab.0.left" timestamp="1612243816587">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="413" key="GridCell.Tab.0.left/0.0.2560.1440/-1920.412.1920.1080@0.0.2560.1440" timestamp="1612036495775" />
-    <state width="2539" height="413" key="GridCell.Tab.0.right" timestamp="1612036495775">
+    <state width="2554" height="418" key="GridCell.Tab.0.left/0.0.2560.1440/-1920.412.1920.1080@0.0.2560.1440" timestamp="1612243816587" />
+    <state width="2554" height="418" key="GridCell.Tab.0.right" timestamp="1612243816587">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="413" key="GridCell.Tab.0.right/0.0.2560.1440/-1920.412.1920.1080@0.0.2560.1440" timestamp="1612036495775" />
+    <state width="2554" height="418" key="GridCell.Tab.0.right/0.0.2560.1440/-1920.412.1920.1080@0.0.2560.1440" timestamp="1612243816587" />
     <state width="2539" height="507" key="GridCell.Tab.1.bottom" timestamp="1611863328123">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>

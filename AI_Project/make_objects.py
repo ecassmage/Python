@@ -7,8 +7,7 @@ Date: 2021/01/27
 import json
 import random
 
-import food
-import human
+from classes import human, food
 
 settings = json.load(open('Settings'))
 
