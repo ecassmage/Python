@@ -26,7 +26,7 @@
     "food": 150,
     "sense_strength": 2,
     "speed_strength": 1,
-    "slow play": true
+    "slow play": false
   },
   "dev": false
 }

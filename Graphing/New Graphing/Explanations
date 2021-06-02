@@ -1,0 +1,7 @@
+Why do I use a bunch of functions getting parameters likes this (company=None, maxPrice=None) etc
+Well I could just send it all up like 99% of the time I will need to send company up but if I do and just use its
+magic then I would box myself in to looking towards a future turn or would have to store the old values. This is better
+since I can choose the values to send through if need be and if I don't company can just write the value I need into
+the corresponding spot. The entire process takes up line space and also takes a few ticks more per call but in my
+opinion the loss of speed and use of more space is completely overshadowed by the increased versatility of the function
+being able to work this way.

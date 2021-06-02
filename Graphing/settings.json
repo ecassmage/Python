@@ -1,0 +1,26 @@
+{
+    "window": {
+        "width": 1500,
+        "height": 400,
+        "refresh": 1
+    },
+    "pStates": {
+        "incredible": 10,
+        "excellent": 8,
+        "good": 3,
+        "normal": 0,
+        "bad": -3,
+        "horrible": -5,
+        "horrendous": -8
+    },
+    "initialCompanies": {
+        "shares": 10000,
+        "value": 10000
+    },
+    "multiplier": 5,
+    "length": 1000,
+    "newCompany": 4,
+    "speed": 60,
+    "stockSplit": 250,
+    "maxCompanies": 100
+}

@@ -98,8 +98,8 @@ def timeStop(route, node, maxTime):
     temp = math.floor((1 / (route.carsPassingThrough / node.carsPassingThrough)) / num)
     if temp == 0:
         temp = 1
-    if len(node.incomingRoads) >= 3:
-        route.timeDelay = 3
+    if len(node.incomingRoads) >= 0:
+        route.timeDelay = 1
         return
     while temp >= maxTime or temp > 10:
         temp = math.ceil(temp / 2)
@@ -148,8 +148,30 @@ def createObjects(numList, routes, carsList):
             nodes[node].active = False
 
     for road in roadObjects:
-        timeStop(roadObjects[road], nodes[roadObjects[road].end], int(numList[0]))
+        # timeStop(roadObjects[road], nodes[roadObjects[road].end], int(numList[0]))
+        roadObjects[road].timeDelay = 1
     return roadObjects, carObjects, nodes
+
+
+def betterBalance(nodes, maxTime):
+    for node in nodes:
+        for road in nodes[node].incomingRoads:
+            percentShare = road.carsPassingThrough / nodes[node].carsPassingThrough
+            if 0.75 <= percentShare != 1 and len(nodes[node].incomingRoads) + 9 <= maxTime:
+                if percentShare < 0.8:
+                    road.timeDelay = 2
+                elif percentShare < 0.85:
+                    road.timeDelay = 3
+                elif percentShare < 0.9:
+                    road.timeDelay = 4
+                elif percentShare < 0.95:
+                    road.timeDelay = 5
+                elif percentShare < 0.97:
+                    road.timeDelay = 6
+                elif percentShare < 0.98:
+                    road.timeDelay = 7
+                else:
+                    road.timeDelay = 9
 
 
 def writeFile(nodes, filename):
@@ -183,6 +205,7 @@ def main(inP):
     file = openSingleFile(f"inputFiles/{inP}.txt")
     numList, routes, carsList = parseFile(file)
     routeObjects, carObjects, nodes = createObjects(numList, routes, carsList)
+    betterBalance(nodes, int(numList[0]))
     writeFile(nodes, f'submission{inP}')
     print(f"We done with {file} or as you could say Number: {inP}")
     return
@@ -195,5 +218,8 @@ if __name__ == '__main__':
         with Pool(processes=6) as p:
             p.map(main, files)
     else:
-        main('a')
+        main('b')
         exit()
+
+
+# 9,290,172 points

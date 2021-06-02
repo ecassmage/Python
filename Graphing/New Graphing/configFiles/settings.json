@@ -1,0 +1,126 @@
+{
+  "economy": {
+    "stability": {
+      "bullish": 25,
+      "stable": 0,
+      "bearish": -25
+    }
+  },
+  "industryNames": [
+    "electronics",
+    "FastFood",
+    "Mining",
+    "Retail",
+    "Agriculture"
+  ],
+  "industries": {
+    "electronics": {
+      "class": "Electronics",
+      "factor": "factory",
+      "startSize": 100000,
+      "employeeRatio": 1,
+      "fixedCosts": 10000,
+      "wage": 30,
+      "productCost": 100,
+      "productWorth": 250,
+      "productionValue": 10
+    },
+    "fastFood": {
+      "class": "FastFood",
+      "factor": "building",
+      "startSize": 10000000,
+      "employeeRatio": 4.8,
+      "fixedCosts": 10000,
+      "wage": 15,
+      "productCost": 2,
+      "productWorth": 8,
+      "productionValue": 0.95
+    },
+    "mining": {
+      "class": "Mining",
+      "factor": "mining",
+      "startSize": 100000000,
+      "employeeRatio": 3.3,
+      "fixedCosts": 50000,
+      "wage": 22,
+      "productCost": 0.1,
+      "productWorth": 1,
+      "productionValue": 0.3
+    },
+    "retail": {
+      "class": "Retail",
+      "factor": "building",
+      "startSize": 1000000,
+      "employeeRatio": 8,
+      "fixedCosts": 40000,
+      "wage": 15,
+      "productCost": 25,
+      "productWorth": 60,
+      "productionValue": 1.1
+    },
+    "agriculture": {
+      "class": "Agriculture",
+      "factor": "farmable",
+      "startSize": 100000000000,
+      "employeeRatio": 3,
+      "fixedCosts": 75000,
+      "wage": 16,
+      "productCost": 0.002,
+      "productWorth": 0.0075,
+      "productionValue": 0.01
+    }
+  },
+  "state": {
+    "bullish": 25,
+    "magnificent": 15,
+    "incredible": 10,
+    "impressive": 8,
+    "good": 5,
+    "decent": 3,
+    "average": 0,
+    "meh": -3,
+    "poor": -5,
+    "deplorable": -8,
+    "terrible": -10,
+    "horrible": -15,
+    "bearish": -25
+  },
+  "capital": {
+    "factory": {
+      "cost": 1000000,
+      "land": 0.5,
+      "product": 7500,
+      "employed": 80,
+      "upkeep": 50000
+    },
+    "mining": {
+      "cost": 2500000,
+      "land": 200,
+      "product": 10000000,
+      "employed": 500,
+      "upkeep": 100000
+    },
+    "building": {
+      "cost": 1500000,
+      "land": 2,
+      "product": 100000,
+      "employed": 150,
+      "upkeep": 10000
+    },
+    "farmable": {
+      "cost": 1500000,
+      "land": 350,
+      "product": 10000000,
+      "employed": 150,
+      "upkeep": 10000
+    }
+  },
+  "land": {
+    "acre": {
+      "cost": 1000
+    }
+  },
+  "stockMarket": {
+    "dividend": 5
+  }
+}

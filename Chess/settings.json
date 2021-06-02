@@ -1,0 +1,18 @@
+{
+  "window": {
+    "width": 1000,
+    "height": 1000
+  },
+  "board": {
+    "width": 8,
+    "height": 8
+  },
+  "teams": {
+    "team1": {
+      "color": "black"
+    },
+    "team2": {
+      "color": "white"
+    }
+  }
+}

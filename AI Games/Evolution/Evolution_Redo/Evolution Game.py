@@ -2,8 +2,6 @@ from tkinter import *
 from copy import copy
 import random
 import time
-import Evol_Module
-# import tensorflow as tf
 Hello = 100
 
 
@@ -94,8 +92,8 @@ class Human:
         self.decision_coordinate()
         self.move_pixel()
         if self.food_in_range is not None:
-            if self.corners[0] <= self.food_in_range.xy[0] <= self.corners[2] and \
-                    self.corners[1] <= self.food_in_range.xy[1] <= self.corners[3]:
+            if self.corners[0] <= self.food_in_range.x <= self.corners[2] and \
+                    self.corners[1] <= self.food_in_range.y <= self.corners[3]:
                 self.eat_food()
         elif self.chosen_coordinate == (self.x, self.y):
             self.pick_coordinate()
@@ -103,7 +101,7 @@ class Human:
 
     def decision_coordinate(self):
         if self.survive_the_round is None:
-            if self.food_in_range is None:
+            if self.food_in_range is None and self.has_food is False:
                 self.in_range()
             if self.food_in_range is None and self.chosen_coordinate is None:
                 self.pick_coordinate()
@@ -188,6 +186,7 @@ class Human:
             else:
                 self.y -= 1
                 self.win.move(self.sprite, 0, -1)
+        self.corners = [self.x - 4, self.y - 4, self.x + 4, self.y + 4]
         self.xy = (self.x, self.y)
 
     def re_draw_position(self):
@@ -196,10 +195,10 @@ class Human:
         self.sprite = self.win.create_rectangle(self.x - 4, self.y - 4, self.x + 4, self.y + 4,
                                                 fill='black', outline=self.color_hex, width=3)
         # self.win.update()
-        if initial_game_settings['fps'] == 0:
-            time.sleep(0)
-        else:
-            time.sleep(1/initial_game_settings['fps'])
+        # if initial_game_settings['fps'] == 0:
+        #     time.sleep(0)
+        # else:
+        #     time.sleep(1/initial_game_settings['fps'])
 
     def eat_food(self):
         self.energy += self.food_in_range.energy
@@ -224,6 +223,7 @@ class Human:
         self.has_food = False
         self.age += 1
         self.energy = initial_game_settings['energy']
+        self.win.delete(self.sprite)
         self.sprite = self.win.create_rectangle(
             self.x - initial_game_settings['size_human'],
             self.y - initial_game_settings['size_human'],
@@ -319,6 +319,17 @@ class Human is the amalgamation of all the inner workings of the Square AI bots 
 The class only covers things that are involved with the the choices the AI needs to make in its day to day life.
 """
 
+
+def sorted_dict(x_dict, t_f):
+    if t_f.xy[0] not in x_dict:
+        x_dict.update({t_f.xy[0]: [t_f]})
+    else:
+        temps = x_dict[t_f.xy[0]]
+        temps.append(t_f)
+        # print(Hello)
+    return x_dict
+
+
 """
 class Food is involved with creating Food objects, basically just the circles location, color, nutrience of the food in 
 energy and the objects physical form
@@ -386,7 +397,7 @@ def food_create(num):
             random.randrange(0, len(color_energy))
         food_object = Food(main_win, x_food, y_food, list(color_energy)[color_food])
         Foods.append(food_object)
-        Foods_sorted = Evol_Module.sorted_dict(Foods_sorted, food_object)
+        Foods_sorted = sorted_dict(Foods_sorted, food_object)
     if len(Foods_sorted) < num < 100000:
         food_create(num - len(Foods_sorted))
 
@@ -545,7 +556,7 @@ Stores some information for the history_record here to be then moved to history_
 
 def tally():
     for human in Humans:
-        human.re_draw_position()
+        # human.re_draw_position()
         if human.sense not in evolution_scoreboard['sense']:
             evolution_scoreboard['sense'].update({human.sense: 1})
         else:
@@ -603,7 +614,7 @@ def main_game():
                 Humans = copy(New_Humans)
                 New_Humans = []
                 initialization_of_game()
-                main_win.update()
+                # main_win.update()
                 historical.update({'Human_pop': len(Humans), 'year': year,
                                    'deaths_now': deaths, 'dead_this_year': dead_up_to_now})
                 dead_up_to_now = deaths
@@ -611,7 +622,7 @@ def main_game():
                 tally()
                 history_record()
                 # time.sleep(0.5)
-            main_win.update()
+            # main_win.update()
 
 
 """

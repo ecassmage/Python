@@ -1,0 +1,1646 @@
+Human Name: Rima Duckey
+	Sprite ID: 1
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [998, 583]
+	Square Coord: [994.0, 578.9999999999999, 1002.0000000000001, 587.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 1 -> Conflict Sprite ID: 112
+	Conflict ClosestID: [0, None]
+	Square Coord: [994.0, 578.9999999999999, 1002.0000000000001, 587.0]
+	ID List: {112: [997, 582], 484: [997, 590], 526: [997, 589], 558: [997, 578], 594: [997, 579]}
+
+
+Human Name: Rima Duckey
+	Sprite ID: 1
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [998, 583]
+	Square Coord: [994.0, 578.9999999999999, 1002.0000000000001, 587.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 1 -> Conflict Sprite ID: 484
+	Conflict ClosestID: [0, None]
+	Square Coord: [994.0, 587.0, 1002.0000000000001, 595.0]
+	ID List: {112: [997, 582], 484: [997, 590], 526: [997, 589], 558: [997, 578], 594: [997, 579]}
+
+
+Human Name: Rima Duckey
+	Sprite ID: 1
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [998, 583]
+	Square Coord: [994.0, 578.9999999999999, 1002.0000000000001, 587.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 1 -> Conflict Sprite ID: 526
+	Conflict ClosestID: [0, None]
+	Square Coord: [994.0, 586.0, 1002.0000000000001, 593.9999999999999]
+	ID List: {112: [997, 582], 484: [997, 590], 526: [997, 589], 558: [997, 578], 594: [997, 579]}
+
+
+Human Name: Rima Duckey
+	Sprite ID: 1
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [998, 583]
+	Square Coord: [994.0, 578.9999999999999, 1002.0000000000001, 587.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 1 -> Conflict Sprite ID: 558
+	Conflict ClosestID: [0, None]
+	Square Coord: [994.0, 575.0, 1002.0000000000001, 583.0]
+	ID List: {112: [997, 582], 484: [997, 590], 526: [997, 589], 558: [997, 578], 594: [997, 579]}
+
+
+Human Name: Rima Duckey
+	Sprite ID: 1
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [998, 583]
+	Square Coord: [994.0, 578.9999999999999, 1002.0000000000001, 587.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 1 -> Conflict Sprite ID: 594
+	Conflict ClosestID: [0, None]
+	Square Coord: [994.0, 576.0, 1002.0000000000001, 583.9999999999999]
+	ID List: {112: [997, 582], 484: [997, 590], 526: [997, 589], 558: [997, 578], 594: [997, 579]}
+
+
+Human Name: Sherin Matsubara
+	Sprite ID: 2
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [998, 336]
+	Square Coord: [994.0, 332.0, 1002.0000000000001, 340.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 2 -> Conflict Sprite ID: 129
+	Conflict ClosestID: [0, None]
+	Square Coord: [994.0, 327.0, 1002.0000000000001, 335.0]
+	ID List: {129: [997, 330]}
+
+
+Human Name: Juanmanuel Hoshaw
+	Sprite ID: 3
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [897, 998]
+	Square Coord: [892.9999999999999, 994.0, 900.9999999999999, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 3 -> Conflict Sprite ID: 729
+	Conflict ClosestID: [0, None]
+	Square Coord: [887.9999999999999, 994.0, 895.9999999999999, 1002.0000000000001]
+	ID List: {729: [891, 997], 910: [903, 997], 914: [898, 997], 923: [896, 997]}
+
+
+Human Name: Juanmanuel Hoshaw
+	Sprite ID: 3
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [897, 998]
+	Square Coord: [892.9999999999999, 994.0, 900.9999999999999, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 3 -> Conflict Sprite ID: 910
+	Conflict ClosestID: [0, None]
+	Square Coord: [900.0, 994.0, 907.9999999999999, 1002.0000000000001]
+	ID List: {729: [891, 997], 910: [903, 997], 914: [898, 997], 923: [896, 997]}
+
+
+Human Name: Juanmanuel Hoshaw
+	Sprite ID: 3
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [897, 998]
+	Square Coord: [892.9999999999999, 994.0, 900.9999999999999, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 3 -> Conflict Sprite ID: 914
+	Conflict ClosestID: [0, None]
+	Square Coord: [895.0, 994.0, 902.9999999999999, 1002.0000000000001]
+	ID List: {729: [891, 997], 910: [903, 997], 914: [898, 997], 923: [896, 997]}
+
+
+Human Name: Juanmanuel Hoshaw
+	Sprite ID: 3
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [897, 998]
+	Square Coord: [892.9999999999999, 994.0, 900.9999999999999, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 3 -> Conflict Sprite ID: 923
+	Conflict ClosestID: [0, None]
+	Square Coord: [892.9999999999999, 994.0, 900.9999999999999, 1002.0000000000001]
+	ID List: {729: [891, 997], 910: [903, 997], 914: [898, 997], 923: [896, 997]}
+
+
+Human Name: Asti Levanger
+	Sprite ID: 4
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [576, 998]
+	Square Coord: [572.0, 994.0, 580.0, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 4 -> Conflict Sprite ID: 62
+	Conflict ClosestID: [0, None]
+	Square Coord: [565.0, 994.0, 573.0, 1002.0000000000001]
+	ID List: {62: [568, 997], 216: [582, 997], 355: [567, 997], 390: [568, 997], 436: [568, 997], 573: [574, 997], 706: [570, 997], 943: [571, 997]}
+
+
+Human Name: Asti Levanger
+	Sprite ID: 4
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [576, 998]
+	Square Coord: [572.0, 994.0, 580.0, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 4 -> Conflict Sprite ID: 216
+	Conflict ClosestID: [0, None]
+	Square Coord: [578.9999999999999, 994.0, 587.0, 1002.0000000000001]
+	ID List: {62: [568, 997], 216: [582, 997], 355: [567, 997], 390: [568, 997], 436: [568, 997], 573: [574, 997], 706: [570, 997], 943: [571, 997]}
+
+
+Human Name: Asti Levanger
+	Sprite ID: 4
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [576, 998]
+	Square Coord: [572.0, 994.0, 580.0, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 4 -> Conflict Sprite ID: 355
+	Conflict ClosestID: [0, None]
+	Square Coord: [563.9999999999999, 994.0, 572.0, 1002.0000000000001]
+	ID List: {62: [568, 997], 216: [582, 997], 355: [567, 997], 390: [568, 997], 436: [568, 997], 573: [574, 997], 706: [570, 997], 943: [571, 997]}
+
+
+Human Name: Asti Levanger
+	Sprite ID: 4
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [576, 998]
+	Square Coord: [572.0, 994.0, 580.0, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 4 -> Conflict Sprite ID: 390
+	Conflict ClosestID: [0, None]
+	Square Coord: [565.0, 994.0, 573.0, 1002.0000000000001]
+	ID List: {62: [568, 997], 216: [582, 997], 355: [567, 997], 390: [568, 997], 436: [568, 997], 573: [574, 997], 706: [570, 997], 943: [571, 997]}
+
+
+Human Name: Asti Levanger
+	Sprite ID: 4
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [576, 998]
+	Square Coord: [572.0, 994.0, 580.0, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 4 -> Conflict Sprite ID: 436
+	Conflict ClosestID: [0, None]
+	Square Coord: [565.0, 994.0, 573.0, 1002.0000000000001]
+	ID List: {62: [568, 997], 216: [582, 997], 355: [567, 997], 390: [568, 997], 436: [568, 997], 573: [574, 997], 706: [570, 997], 943: [571, 997]}
+
+
+Human Name: Asti Levanger
+	Sprite ID: 4
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [576, 998]
+	Square Coord: [572.0, 994.0, 580.0, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 4 -> Conflict Sprite ID: 573
+	Conflict ClosestID: [0, None]
+	Square Coord: [571.0, 994.0, 578.9999999999999, 1002.0000000000001]
+	ID List: {62: [568, 997], 216: [582, 997], 355: [567, 997], 390: [568, 997], 436: [568, 997], 573: [574, 997], 706: [570, 997], 943: [571, 997]}
+
+
+Human Name: Asti Levanger
+	Sprite ID: 4
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [576, 998]
+	Square Coord: [572.0, 994.0, 580.0, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 4 -> Conflict Sprite ID: 706
+	Conflict ClosestID: [0, None]
+	Square Coord: [567.0, 994.0, 575.0, 1002.0000000000001]
+	ID List: {62: [568, 997], 216: [582, 997], 355: [567, 997], 390: [568, 997], 436: [568, 997], 573: [574, 997], 706: [570, 997], 943: [571, 997]}
+
+
+Human Name: Asti Levanger
+	Sprite ID: 4
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [576, 998]
+	Square Coord: [572.0, 994.0, 580.0, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 4 -> Conflict Sprite ID: 943
+	Conflict ClosestID: [0, None]
+	Square Coord: [568.0, 994.0, 576.0, 1002.0000000000001]
+	ID List: {62: [568, 997], 216: [582, 997], 355: [567, 997], 390: [568, 997], 436: [568, 997], 573: [574, 997], 706: [570, 997], 943: [571, 997]}
+
+
+Human Name: Jonah Crump
+	Sprite ID: 5
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [4, 981]
+	Square Coord: [0.0, 977.0000000000001, 8.0, 985.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 5 -> Conflict Sprite ID: 103
+	Conflict ClosestID: [0, None]
+	Square Coord: [0.0, 982.9999999999998, 8.0, 990.9999999999999]
+	ID List: {103: [3, 986], 154: [3, 989], 295: [3, 974], 603: [3, 980], 784: [3, 974]}
+
+
+Human Name: Jonah Crump
+	Sprite ID: 5
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [4, 981]
+	Square Coord: [0.0, 977.0000000000001, 8.0, 985.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 5 -> Conflict Sprite ID: 154
+	Conflict ClosestID: [0, None]
+	Square Coord: [0.0, 985.9999999999999, 8.0, 994.0]
+	ID List: {103: [3, 986], 154: [3, 989], 295: [3, 974], 603: [3, 980], 784: [3, 974]}
+
+
+Human Name: Jonah Crump
+	Sprite ID: 5
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [4, 981]
+	Square Coord: [0.0, 977.0000000000001, 8.0, 985.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 5 -> Conflict Sprite ID: 295
+	Conflict ClosestID: [0, None]
+	Square Coord: [0.0, 970.9999999999999, 8.0, 979.0]
+	ID List: {103: [3, 986], 154: [3, 989], 295: [3, 974], 603: [3, 980], 784: [3, 974]}
+
+
+Human Name: Jonah Crump
+	Sprite ID: 5
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [4, 981]
+	Square Coord: [0.0, 977.0000000000001, 8.0, 985.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 5 -> Conflict Sprite ID: 603
+	Conflict ClosestID: [0, None]
+	Square Coord: [0.0, 977.0000000000001, 8.0, 985.0]
+	ID List: {103: [3, 986], 154: [3, 989], 295: [3, 974], 603: [3, 980], 784: [3, 974]}
+
+
+Human Name: Jonah Crump
+	Sprite ID: 5
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [4, 981]
+	Square Coord: [0.0, 977.0000000000001, 8.0, 985.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 5 -> Conflict Sprite ID: 784
+	Conflict ClosestID: [0, None]
+	Square Coord: [0.0, 970.9999999999999, 8.0, 979.0]
+	ID List: {103: [3, 986], 154: [3, 989], 295: [3, 974], 603: [3, 980], 784: [3, 974]}
+
+
+Human Name: Davell Freeney
+	Sprite ID: 6
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [372, 4]
+	Square Coord: [367.99999999999994, 0.0, 376.0, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 6 -> Conflict Sprite ID: 306
+	Conflict ClosestID: [0, None]
+	Square Coord: [373.99999999999994, 0.0, 382.0, 8.0]
+	ID List: {306: [377, 3], 336: [366, 3], 535: [363, 3], 684: [369, 3], 871: [377, 3]}
+
+
+Human Name: Davell Freeney
+	Sprite ID: 6
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [372, 4]
+	Square Coord: [367.99999999999994, 0.0, 376.0, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 6 -> Conflict Sprite ID: 336
+	Conflict ClosestID: [0, None]
+	Square Coord: [362.99999999999994, 0.0, 371.0, 8.0]
+	ID List: {306: [377, 3], 336: [366, 3], 535: [363, 3], 684: [369, 3], 871: [377, 3]}
+
+
+Human Name: Davell Freeney
+	Sprite ID: 6
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [372, 4]
+	Square Coord: [367.99999999999994, 0.0, 376.0, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 6 -> Conflict Sprite ID: 535
+	Conflict ClosestID: [0, None]
+	Square Coord: [360.0, 0.0, 367.99999999999994, 8.0]
+	ID List: {306: [377, 3], 336: [366, 3], 535: [363, 3], 684: [369, 3], 871: [377, 3]}
+
+
+Human Name: Davell Freeney
+	Sprite ID: 6
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [372, 4]
+	Square Coord: [367.99999999999994, 0.0, 376.0, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 6 -> Conflict Sprite ID: 684
+	Conflict ClosestID: [0, None]
+	Square Coord: [366.0, 0.0, 373.99999999999994, 8.0]
+	ID List: {306: [377, 3], 336: [366, 3], 535: [363, 3], 684: [369, 3], 871: [377, 3]}
+
+
+Human Name: Davell Freeney
+	Sprite ID: 6
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [372, 4]
+	Square Coord: [367.99999999999994, 0.0, 376.0, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 6 -> Conflict Sprite ID: 871
+	Conflict ClosestID: [0, None]
+	Square Coord: [373.99999999999994, 0.0, 382.0, 8.0]
+	ID List: {306: [377, 3], 336: [366, 3], 535: [363, 3], 684: [369, 3], 871: [377, 3]}
+
+
+Human Name: Tait Net
+	Sprite ID: 7
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [998, 828]
+	Square Coord: [994.0, 824.0, 1002.0000000000001, 832.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 7 -> Conflict Sprite ID: 670
+	Conflict ClosestID: [0, None]
+	Square Coord: [994.0, 830.9999999999999, 1002.0000000000001, 839.0]
+	ID List: {670: [997, 834]}
+
+
+Human Name: Tonja Colasurdo
+	Sprite ID: 8
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [977, 4]
+	Square Coord: [972.9999999999998, 0.0, 980.9999999999999, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 8 -> Conflict Sprite ID: 207
+	Conflict ClosestID: [0, None]
+	Square Coord: [975.9999999999999, 0.0, 984.0, 8.0]
+	ID List: {207: [979, 3], 278: [978, 3], 779: [980, 3], 959: [976, 3]}
+
+
+Human Name: Tonja Colasurdo
+	Sprite ID: 8
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [977, 4]
+	Square Coord: [972.9999999999998, 0.0, 980.9999999999999, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 8 -> Conflict Sprite ID: 278
+	Conflict ClosestID: [0, None]
+	Square Coord: [975.0, 0.0, 982.9999999999998, 8.0]
+	ID List: {207: [979, 3], 278: [978, 3], 779: [980, 3], 959: [976, 3]}
+
+
+Human Name: Tonja Colasurdo
+	Sprite ID: 8
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [977, 4]
+	Square Coord: [972.9999999999998, 0.0, 980.9999999999999, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 8 -> Conflict Sprite ID: 779
+	Conflict ClosestID: [0, None]
+	Square Coord: [977.0000000000001, 0.0, 985.0, 8.0]
+	ID List: {207: [979, 3], 278: [978, 3], 779: [980, 3], 959: [976, 3]}
+
+
+Human Name: Tonja Colasurdo
+	Sprite ID: 8
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [977, 4]
+	Square Coord: [972.9999999999998, 0.0, 980.9999999999999, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 8 -> Conflict Sprite ID: 959
+	Conflict ClosestID: [0, None]
+	Square Coord: [972.9999999999998, 0.0, 980.9999999999999, 8.0]
+	ID List: {207: [979, 3], 278: [978, 3], 779: [980, 3], 959: [976, 3]}
+
+
+Human Name: Kaila Ricketts
+	Sprite ID: 9
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [859, 998]
+	Square Coord: [855.0, 994.0, 862.9999999999999, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 9 -> Conflict Sprite ID: 420
+	Conflict ClosestID: [0, None]
+	Square Coord: [857.9999999999999, 994.0, 865.9999999999999, 1002.0000000000001]
+	ID List: {420: [861, 997], 554: [852, 997], 591: [867, 997], 660: [855, 997], 689: [858, 997]}
+
+
+Human Name: Kaila Ricketts
+	Sprite ID: 9
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [859, 998]
+	Square Coord: [855.0, 994.0, 862.9999999999999, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 9 -> Conflict Sprite ID: 554
+	Conflict ClosestID: [0, None]
+	Square Coord: [849.0, 994.0, 857.0, 1002.0000000000001]
+	ID List: {420: [861, 997], 554: [852, 997], 591: [867, 997], 660: [855, 997], 689: [858, 997]}
+
+
+Human Name: Kaila Ricketts
+	Sprite ID: 9
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [859, 998]
+	Square Coord: [855.0, 994.0, 862.9999999999999, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 9 -> Conflict Sprite ID: 591
+	Conflict ClosestID: [0, None]
+	Square Coord: [864.0, 994.0, 872.0, 1002.0000000000001]
+	ID List: {420: [861, 997], 554: [852, 997], 591: [867, 997], 660: [855, 997], 689: [858, 997]}
+
+
+Human Name: Kaila Ricketts
+	Sprite ID: 9
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [859, 998]
+	Square Coord: [855.0, 994.0, 862.9999999999999, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 9 -> Conflict Sprite ID: 660
+	Conflict ClosestID: [0, None]
+	Square Coord: [852.0, 994.0, 860.0, 1002.0000000000001]
+	ID List: {420: [861, 997], 554: [852, 997], 591: [867, 997], 660: [855, 997], 689: [858, 997]}
+
+
+Human Name: Kaila Ricketts
+	Sprite ID: 9
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [859, 998]
+	Square Coord: [855.0, 994.0, 862.9999999999999, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 9 -> Conflict Sprite ID: 689
+	Conflict ClosestID: [0, None]
+	Square Coord: [855.0, 994.0, 862.9999999999999, 1002.0000000000001]
+	ID List: {420: [861, 997], 554: [852, 997], 591: [867, 997], 660: [855, 997], 689: [858, 997]}
+
+
+Human Name: Zalika Carrasquillo
+	Sprite ID: 10
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [764, 998]
+	Square Coord: [760.0, 994.0, 767.9999999999999, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 10 -> Conflict Sprite ID: 123
+	Conflict ClosestID: [0, None]
+	Square Coord: [760.0, 994.0, 767.9999999999999, 1002.0000000000001]
+	ID List: {123: [763, 997], 261: [770, 997], 475: [767, 997], 542: [767, 997], 853: [770, 997]}
+
+
+Human Name: Zalika Carrasquillo
+	Sprite ID: 10
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [764, 998]
+	Square Coord: [760.0, 994.0, 767.9999999999999, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 10 -> Conflict Sprite ID: 261
+	Conflict ClosestID: [0, None]
+	Square Coord: [767.0, 994.0, 775.0, 1002.0000000000001]
+	ID List: {123: [763, 997], 261: [770, 997], 475: [767, 997], 542: [767, 997], 853: [770, 997]}
+
+
+Human Name: Zalika Carrasquillo
+	Sprite ID: 10
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [764, 998]
+	Square Coord: [760.0, 994.0, 767.9999999999999, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 10 -> Conflict Sprite ID: 475
+	Conflict ClosestID: [0, None]
+	Square Coord: [764.0, 994.0, 772.0, 1002.0000000000001]
+	ID List: {123: [763, 997], 261: [770, 997], 475: [767, 997], 542: [767, 997], 853: [770, 997]}
+
+
+Human Name: Zalika Carrasquillo
+	Sprite ID: 10
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [764, 998]
+	Square Coord: [760.0, 994.0, 767.9999999999999, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 10 -> Conflict Sprite ID: 542
+	Conflict ClosestID: [0, None]
+	Square Coord: [764.0, 994.0, 772.0, 1002.0000000000001]
+	ID List: {123: [763, 997], 261: [770, 997], 475: [767, 997], 542: [767, 997], 853: [770, 997]}
+
+
+Human Name: Zalika Carrasquillo
+	Sprite ID: 10
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [764, 998]
+	Square Coord: [760.0, 994.0, 767.9999999999999, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 10 -> Conflict Sprite ID: 853
+	Conflict ClosestID: [0, None]
+	Square Coord: [767.0, 994.0, 775.0, 1002.0000000000001]
+	ID List: {123: [763, 997], 261: [770, 997], 475: [767, 997], 542: [767, 997], 853: [770, 997]}
+
+
+Human Name: Lanesha Rodricks
+	Sprite ID: 11
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [962, 4]
+	Square Coord: [957.9999999999999, 0.0, 965.9999999999999, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 11 -> Conflict Sprite ID: 217
+	Conflict ClosestID: [0, None]
+	Square Coord: [959.0, 0.0, 967.0, 8.0]
+	ID List: {217: [962, 3], 224: [957, 3], 409: [963, 3], 595: [953, 3], 600: [959, 3], 610: [954, 3], 860: [966, 3]}
+
+
+Human Name: Lanesha Rodricks
+	Sprite ID: 11
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [962, 4]
+	Square Coord: [957.9999999999999, 0.0, 965.9999999999999, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 11 -> Conflict Sprite ID: 224
+	Conflict ClosestID: [0, None]
+	Square Coord: [954.0, 0.0, 962.0, 8.0]
+	ID List: {217: [962, 3], 224: [957, 3], 409: [963, 3], 595: [953, 3], 600: [959, 3], 610: [954, 3], 860: [966, 3]}
+
+
+Human Name: Lanesha Rodricks
+	Sprite ID: 11
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [962, 4]
+	Square Coord: [957.9999999999999, 0.0, 965.9999999999999, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 11 -> Conflict Sprite ID: 409
+	Conflict ClosestID: [0, None]
+	Square Coord: [960.0, 0.0, 967.9999999999999, 8.0]
+	ID List: {217: [962, 3], 224: [957, 3], 409: [963, 3], 595: [953, 3], 600: [959, 3], 610: [954, 3], 860: [966, 3]}
+
+
+Human Name: Lanesha Rodricks
+	Sprite ID: 11
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [962, 4]
+	Square Coord: [957.9999999999999, 0.0, 965.9999999999999, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 11 -> Conflict Sprite ID: 595
+	Conflict ClosestID: [0, None]
+	Square Coord: [950.0, 0.0, 957.9999999999999, 8.0]
+	ID List: {217: [962, 3], 224: [957, 3], 409: [963, 3], 595: [953, 3], 600: [959, 3], 610: [954, 3], 860: [966, 3]}
+
+
+Human Name: Lanesha Rodricks
+	Sprite ID: 11
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [962, 4]
+	Square Coord: [957.9999999999999, 0.0, 965.9999999999999, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 11 -> Conflict Sprite ID: 600
+	Conflict ClosestID: [0, None]
+	Square Coord: [955.9999999999999, 0.0, 964.0, 8.0]
+	ID List: {217: [962, 3], 224: [957, 3], 409: [963, 3], 595: [953, 3], 600: [959, 3], 610: [954, 3], 860: [966, 3]}
+
+
+Human Name: Lanesha Rodricks
+	Sprite ID: 11
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [962, 4]
+	Square Coord: [957.9999999999999, 0.0, 965.9999999999999, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 11 -> Conflict Sprite ID: 610
+	Conflict ClosestID: [0, None]
+	Square Coord: [950.9999999999999, 0.0, 959.0, 8.0]
+	ID List: {217: [962, 3], 224: [957, 3], 409: [963, 3], 595: [953, 3], 600: [959, 3], 610: [954, 3], 860: [966, 3]}
+
+
+Human Name: Lanesha Rodricks
+	Sprite ID: 11
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [962, 4]
+	Square Coord: [957.9999999999999, 0.0, 965.9999999999999, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 11 -> Conflict Sprite ID: 860
+	Conflict ClosestID: [0, None]
+	Square Coord: [962.9999999999999, 0.0, 970.9999999999999, 8.0]
+	ID List: {217: [962, 3], 224: [957, 3], 409: [963, 3], 595: [953, 3], 600: [959, 3], 610: [954, 3], 860: [966, 3]}
+
+
+Human Name: Patrece Bissol
+	Sprite ID: 12
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [998, 537]
+	Square Coord: [994.0, 533.0, 1002.0000000000001, 541.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 12 -> Conflict Sprite ID: 301
+	Conflict ClosestID: [0, None]
+	Square Coord: [994.0, 541.0, 1002.0000000000001, 548.9999999999999]
+	ID List: {301: [997, 544]}
+
+
+Human Name: Solana Paluso
+	Sprite ID: 13
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [4, 403]
+	Square Coord: [0.0, 398.99999999999994, 8.0, 407.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 13 -> Conflict Sprite ID: 434
+	Conflict ClosestID: [0, None]
+	Square Coord: [0.0, 407.99999999999994, 8.0, 416.0]
+	ID List: {434: [3, 411], 755: [3, 403]}
+
+
+Human Name: Solana Paluso
+	Sprite ID: 13
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [4, 403]
+	Square Coord: [0.0, 398.99999999999994, 8.0, 407.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 13 -> Conflict Sprite ID: 755
+	Conflict ClosestID: [0, None]
+	Square Coord: [0.0, 400.0, 8.0, 407.99999999999994]
+	ID List: {434: [3, 411], 755: [3, 403]}
+
+
+Human Name: Theresa Hannan
+	Sprite ID: 14
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [4, 49]
+	Square Coord: [0.0, 45.0, 8.0, 52.99999999999999]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 14 -> Conflict Sprite ID: 166
+	Conflict ClosestID: [0, None]
+	Square Coord: [0.0, 52.99999999999999, 8.0, 60.99999999999999]
+	ID List: {166: [3, 56], 172: [3, 48], 195: [3, 54], 210: [3, 46], 298: [3, 49], 328: [3, 56], 479: [3, 44], 563: [3, 51], 630: [3, 47], 804: [3, 57]}
+
+
+Human Name: Theresa Hannan
+	Sprite ID: 14
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [4, 49]
+	Square Coord: [0.0, 45.0, 8.0, 52.99999999999999]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 14 -> Conflict Sprite ID: 172
+	Conflict ClosestID: [0, None]
+	Square Coord: [0.0, 45.0, 8.0, 52.99999999999999]
+	ID List: {166: [3, 56], 172: [3, 48], 195: [3, 54], 210: [3, 46], 298: [3, 49], 328: [3, 56], 479: [3, 44], 563: [3, 51], 630: [3, 47], 804: [3, 57]}
+
+
+Human Name: Theresa Hannan
+	Sprite ID: 14
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [4, 49]
+	Square Coord: [0.0, 45.0, 8.0, 52.99999999999999]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 14 -> Conflict Sprite ID: 195
+	Conflict ClosestID: [0, None]
+	Square Coord: [0.0, 50.99999999999999, 8.0, 59.0]
+	ID List: {166: [3, 56], 172: [3, 48], 195: [3, 54], 210: [3, 46], 298: [3, 49], 328: [3, 56], 479: [3, 44], 563: [3, 51], 630: [3, 47], 804: [3, 57]}
+
+
+Human Name: Theresa Hannan
+	Sprite ID: 14
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [4, 49]
+	Square Coord: [0.0, 45.0, 8.0, 52.99999999999999]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 14 -> Conflict Sprite ID: 210
+	Conflict ClosestID: [0, None]
+	Square Coord: [0.0, 43.0, 8.0, 50.99999999999999]
+	ID List: {166: [3, 56], 172: [3, 48], 195: [3, 54], 210: [3, 46], 298: [3, 49], 328: [3, 56], 479: [3, 44], 563: [3, 51], 630: [3, 47], 804: [3, 57]}
+
+
+Human Name: Theresa Hannan
+	Sprite ID: 14
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [4, 49]
+	Square Coord: [0.0, 45.0, 8.0, 52.99999999999999]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 14 -> Conflict Sprite ID: 298
+	Conflict ClosestID: [0, None]
+	Square Coord: [0.0, 45.99999999999999, 8.0, 54.0]
+	ID List: {166: [3, 56], 172: [3, 48], 195: [3, 54], 210: [3, 46], 298: [3, 49], 328: [3, 56], 479: [3, 44], 563: [3, 51], 630: [3, 47], 804: [3, 57]}
+
+
+Human Name: Theresa Hannan
+	Sprite ID: 14
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [4, 49]
+	Square Coord: [0.0, 45.0, 8.0, 52.99999999999999]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 14 -> Conflict Sprite ID: 328
+	Conflict ClosestID: [0, None]
+	Square Coord: [0.0, 52.99999999999999, 8.0, 60.99999999999999]
+	ID List: {166: [3, 56], 172: [3, 48], 195: [3, 54], 210: [3, 46], 298: [3, 49], 328: [3, 56], 479: [3, 44], 563: [3, 51], 630: [3, 47], 804: [3, 57]}
+
+
+Human Name: Theresa Hannan
+	Sprite ID: 14
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [4, 49]
+	Square Coord: [0.0, 45.0, 8.0, 52.99999999999999]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 14 -> Conflict Sprite ID: 479
+	Conflict ClosestID: [0, None]
+	Square Coord: [0.0, 40.99999999999999, 8.0, 49.0]
+	ID List: {166: [3, 56], 172: [3, 48], 195: [3, 54], 210: [3, 46], 298: [3, 49], 328: [3, 56], 479: [3, 44], 563: [3, 51], 630: [3, 47], 804: [3, 57]}
+
+
+Human Name: Theresa Hannan
+	Sprite ID: 14
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [4, 49]
+	Square Coord: [0.0, 45.0, 8.0, 52.99999999999999]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 14 -> Conflict Sprite ID: 563
+	Conflict ClosestID: [0, None]
+	Square Coord: [0.0, 47.99999999999999, 8.0, 55.99999999999999]
+	ID List: {166: [3, 56], 172: [3, 48], 195: [3, 54], 210: [3, 46], 298: [3, 49], 328: [3, 56], 479: [3, 44], 563: [3, 51], 630: [3, 47], 804: [3, 57]}
+
+
+Human Name: Theresa Hannan
+	Sprite ID: 14
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [4, 49]
+	Square Coord: [0.0, 45.0, 8.0, 52.99999999999999]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 14 -> Conflict Sprite ID: 630
+	Conflict ClosestID: [0, None]
+	Square Coord: [0.0, 44.0, 8.0, 52.0]
+	ID List: {166: [3, 56], 172: [3, 48], 195: [3, 54], 210: [3, 46], 298: [3, 49], 328: [3, 56], 479: [3, 44], 563: [3, 51], 630: [3, 47], 804: [3, 57]}
+
+
+Human Name: Theresa Hannan
+	Sprite ID: 14
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [4, 49]
+	Square Coord: [0.0, 45.0, 8.0, 52.99999999999999]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 14 -> Conflict Sprite ID: 804
+	Conflict ClosestID: [0, None]
+	Square Coord: [0.0, 54.0, 8.0, 62.00000000000001]
+	ID List: {166: [3, 56], 172: [3, 48], 195: [3, 54], 210: [3, 46], 298: [3, 49], 328: [3, 56], 479: [3, 44], 563: [3, 51], 630: [3, 47], 804: [3, 57]}
+
+
+Human Name: Bryheem Marashi
+	Sprite ID: 15
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [361, 4]
+	Square Coord: [357.0, 0.0, 365.0, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 15 -> Conflict Sprite ID: 336
+	Conflict ClosestID: [0, None]
+	Square Coord: [362.99999999999994, 0.0, 371.0, 8.0]
+	ID List: {336: [366, 3], 535: [363, 3], 684: [369, 3], 883: [354, 3]}
+
+
+Human Name: Bryheem Marashi
+	Sprite ID: 15
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [361, 4]
+	Square Coord: [357.0, 0.0, 365.0, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 15 -> Conflict Sprite ID: 535
+	Conflict ClosestID: [0, None]
+	Square Coord: [360.0, 0.0, 367.99999999999994, 8.0]
+	ID List: {336: [366, 3], 535: [363, 3], 684: [369, 3], 883: [354, 3]}
+
+
+Human Name: Bryheem Marashi
+	Sprite ID: 15
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [361, 4]
+	Square Coord: [357.0, 0.0, 365.0, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 15 -> Conflict Sprite ID: 684
+	Conflict ClosestID: [0, None]
+	Square Coord: [366.0, 0.0, 373.99999999999994, 8.0]
+	ID List: {336: [366, 3], 535: [363, 3], 684: [369, 3], 883: [354, 3]}
+
+
+Human Name: Bryheem Marashi
+	Sprite ID: 15
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [361, 4]
+	Square Coord: [357.0, 0.0, 365.0, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 15 -> Conflict Sprite ID: 883
+	Conflict ClosestID: [0, None]
+	Square Coord: [351.0, 0.0, 358.99999999999994, 8.0]
+	ID List: {336: [366, 3], 535: [363, 3], 684: [369, 3], 883: [354, 3]}
+
+
+Human Name: Latham Stenback
+	Sprite ID: 16
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [411, 4]
+	Square Coord: [407.0, 0.0, 415.0, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 16 -> Conflict Sprite ID: 783
+	Conflict ClosestID: [0, None]
+	Square Coord: [408.99999999999994, 0.0, 417.0, 8.0]
+	ID List: {783: [412, 3]}
+
+
+Human Name: Teasha Gutzman
+	Sprite ID: 17
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [594, 4]
+	Square Coord: [590.0, 0.0, 598.0, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 17 -> Conflict Sprite ID: 126
+	Conflict ClosestID: [0, None]
+	Square Coord: [588.0, 0.0, 596.0, 8.0]
+	ID List: {126: [591, 3], 197: [586, 3], 201: [594, 3], 329: [602, 3], 418: [601, 3], 764: [586, 3], 912: [599, 3]}
+
+
+Human Name: Teasha Gutzman
+	Sprite ID: 17
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [594, 4]
+	Square Coord: [590.0, 0.0, 598.0, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 17 -> Conflict Sprite ID: 197
+	Conflict ClosestID: [0, None]
+	Square Coord: [583.0, 0.0, 591.0, 8.0]
+	ID List: {126: [591, 3], 197: [586, 3], 201: [594, 3], 329: [602, 3], 418: [601, 3], 764: [586, 3], 912: [599, 3]}
+
+
+Human Name: Teasha Gutzman
+	Sprite ID: 17
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [594, 4]
+	Square Coord: [590.0, 0.0, 598.0, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 17 -> Conflict Sprite ID: 201
+	Conflict ClosestID: [0, None]
+	Square Coord: [591.0, 0.0, 598.9999999999999, 8.0]
+	ID List: {126: [591, 3], 197: [586, 3], 201: [594, 3], 329: [602, 3], 418: [601, 3], 764: [586, 3], 912: [599, 3]}
+
+
+Human Name: Teasha Gutzman
+	Sprite ID: 17
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [594, 4]
+	Square Coord: [590.0, 0.0, 598.0, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 17 -> Conflict Sprite ID: 329
+	Conflict ClosestID: [0, None]
+	Square Coord: [598.9999999999999, 0.0, 607.0, 8.0]
+	ID List: {126: [591, 3], 197: [586, 3], 201: [594, 3], 329: [602, 3], 418: [601, 3], 764: [586, 3], 912: [599, 3]}
+
+
+Human Name: Teasha Gutzman
+	Sprite ID: 17
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [594, 4]
+	Square Coord: [590.0, 0.0, 598.0, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 17 -> Conflict Sprite ID: 418
+	Conflict ClosestID: [0, None]
+	Square Coord: [598.0, 0.0, 606.0, 8.0]
+	ID List: {126: [591, 3], 197: [586, 3], 201: [594, 3], 329: [602, 3], 418: [601, 3], 764: [586, 3], 912: [599, 3]}
+
+
+Human Name: Teasha Gutzman
+	Sprite ID: 17
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [594, 4]
+	Square Coord: [590.0, 0.0, 598.0, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 17 -> Conflict Sprite ID: 764
+	Conflict ClosestID: [0, None]
+	Square Coord: [583.0, 0.0, 591.0, 8.0]
+	ID List: {126: [591, 3], 197: [586, 3], 201: [594, 3], 329: [602, 3], 418: [601, 3], 764: [586, 3], 912: [599, 3]}
+
+
+Human Name: Teasha Gutzman
+	Sprite ID: 17
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [594, 4]
+	Square Coord: [590.0, 0.0, 598.0, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 17 -> Conflict Sprite ID: 912
+	Conflict ClosestID: [0, None]
+	Square Coord: [596.0, 0.0, 603.9999999999999, 8.0]
+	ID List: {126: [591, 3], 197: [586, 3], 201: [594, 3], 329: [602, 3], 418: [601, 3], 764: [586, 3], 912: [599, 3]}
+
+
+Human Name: Chasitty Bravard
+	Sprite ID: 18
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [4, 416]
+	Square Coord: [0.0, 412.0, 8.0, 420.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 18 -> Conflict Sprite ID: 92
+	Conflict ClosestID: [0, None]
+	Square Coord: [0.0, 415.0, 8.0, 422.99999999999994]
+	ID List: {92: [3, 418], 434: [3, 411], 752: [3, 421]}
+
+
+Human Name: Chasitty Bravard
+	Sprite ID: 18
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [4, 416]
+	Square Coord: [0.0, 412.0, 8.0, 420.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 18 -> Conflict Sprite ID: 434
+	Conflict ClosestID: [0, None]
+	Square Coord: [0.0, 407.99999999999994, 8.0, 416.0]
+	ID List: {92: [3, 418], 434: [3, 411], 752: [3, 421]}
+
+
+Human Name: Chasitty Bravard
+	Sprite ID: 18
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [4, 416]
+	Square Coord: [0.0, 412.0, 8.0, 420.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 18 -> Conflict Sprite ID: 752
+	Conflict ClosestID: [0, None]
+	Square Coord: [0.0, 417.99999999999994, 8.0, 426.0]
+	ID List: {92: [3, 418], 434: [3, 411], 752: [3, 421]}
+
+
+Human Name: Angelle Verducci
+	Sprite ID: 19
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [597, 998]
+	Square Coord: [593.0, 994.0, 601.0, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 19 -> Conflict Sprite ID: 133
+	Conflict ClosestID: [0, None]
+	Square Coord: [601.0, 994.0, 608.9999999999999, 1002.0000000000001]
+	ID List: {133: [604, 997], 204: [605, 997], 253: [601, 997], 572: [595, 997]}
+
+
+Human Name: Angelle Verducci
+	Sprite ID: 19
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [597, 998]
+	Square Coord: [593.0, 994.0, 601.0, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 19 -> Conflict Sprite ID: 204
+	Conflict ClosestID: [0, None]
+	Square Coord: [602.0, 994.0, 610.0, 1002.0000000000001]
+	ID List: {133: [604, 997], 204: [605, 997], 253: [601, 997], 572: [595, 997]}
+
+
+Human Name: Angelle Verducci
+	Sprite ID: 19
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [597, 998]
+	Square Coord: [593.0, 994.0, 601.0, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 19 -> Conflict Sprite ID: 253
+	Conflict ClosestID: [0, None]
+	Square Coord: [598.0, 994.0, 606.0, 1002.0000000000001]
+	ID List: {133: [604, 997], 204: [605, 997], 253: [601, 997], 572: [595, 997]}
+
+
+Human Name: Angelle Verducci
+	Sprite ID: 19
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [597, 998]
+	Square Coord: [593.0, 994.0, 601.0, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 19 -> Conflict Sprite ID: 572
+	Conflict ClosestID: [0, None]
+	Square Coord: [592.0, 994.0, 600.0, 1002.0000000000001]
+	ID List: {133: [604, 997], 204: [605, 997], 253: [601, 997], 572: [595, 997]}
+
+
+Human Name: Adriene Vignarath
+	Sprite ID: 20
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [67, 998]
+	Square Coord: [62.999999999999986, 994.0, 71.0, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 20 -> Conflict Sprite ID: 164
+	Conflict ClosestID: [0, None]
+	Square Coord: [72.0, 994.0, 80.0, 1002.0000000000001]
+	ID List: {164: [75, 997]}
+
+
+Human Name: Dorthy Chesterman
+	Sprite ID: 21
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [849, 4]
+	Square Coord: [845.0, 0.0, 852.9999999999999, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 21 -> Conflict Sprite ID: 319
+	Conflict ClosestID: [0, None]
+	Square Coord: [850.9999999999999, 0.0, 859.0, 8.0]
+	ID List: {319: [854, 3], 406: [843, 3], 465: [851, 3], 698: [856, 3], 823: [857, 3], 865: [851, 3], 903: [840, 3]}
+
+
+Human Name: Dorthy Chesterman
+	Sprite ID: 21
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [849, 4]
+	Square Coord: [845.0, 0.0, 852.9999999999999, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 21 -> Conflict Sprite ID: 406
+	Conflict ClosestID: [0, None]
+	Square Coord: [840.0, 0.0, 847.9999999999999, 8.0]
+	ID List: {319: [854, 3], 406: [843, 3], 465: [851, 3], 698: [856, 3], 823: [857, 3], 865: [851, 3], 903: [840, 3]}
+
+
+Human Name: Dorthy Chesterman
+	Sprite ID: 21
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [849, 4]
+	Square Coord: [845.0, 0.0, 852.9999999999999, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 21 -> Conflict Sprite ID: 465
+	Conflict ClosestID: [0, None]
+	Square Coord: [847.9999999999999, 0.0, 855.9999999999999, 8.0]
+	ID List: {319: [854, 3], 406: [843, 3], 465: [851, 3], 698: [856, 3], 823: [857, 3], 865: [851, 3], 903: [840, 3]}
+
+
+Human Name: Dorthy Chesterman
+	Sprite ID: 21
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [849, 4]
+	Square Coord: [845.0, 0.0, 852.9999999999999, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 21 -> Conflict Sprite ID: 698
+	Conflict ClosestID: [0, None]
+	Square Coord: [852.9999999999999, 0.0, 860.9999999999999, 8.0]
+	ID List: {319: [854, 3], 406: [843, 3], 465: [851, 3], 698: [856, 3], 823: [857, 3], 865: [851, 3], 903: [840, 3]}
+
+
+Human Name: Dorthy Chesterman
+	Sprite ID: 21
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [849, 4]
+	Square Coord: [845.0, 0.0, 852.9999999999999, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 21 -> Conflict Sprite ID: 823
+	Conflict ClosestID: [0, None]
+	Square Coord: [854.0, 0.0, 862.0, 8.0]
+	ID List: {319: [854, 3], 406: [843, 3], 465: [851, 3], 698: [856, 3], 823: [857, 3], 865: [851, 3], 903: [840, 3]}
+
+
+Human Name: Dorthy Chesterman
+	Sprite ID: 21
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [849, 4]
+	Square Coord: [845.0, 0.0, 852.9999999999999, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 21 -> Conflict Sprite ID: 865
+	Conflict ClosestID: [0, None]
+	Square Coord: [847.9999999999999, 0.0, 855.9999999999999, 8.0]
+	ID List: {319: [854, 3], 406: [843, 3], 465: [851, 3], 698: [856, 3], 823: [857, 3], 865: [851, 3], 903: [840, 3]}
+
+
+Human Name: Dorthy Chesterman
+	Sprite ID: 21
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [849, 4]
+	Square Coord: [845.0, 0.0, 852.9999999999999, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 21 -> Conflict Sprite ID: 903
+	Conflict ClosestID: [0, None]
+	Square Coord: [837.0, 0.0, 845.0, 8.0]
+	ID List: {319: [854, 3], 406: [843, 3], 465: [851, 3], 698: [856, 3], 823: [857, 3], 865: [851, 3], 903: [840, 3]}
+
+
+Human Name: Cheria Echter
+	Sprite ID: 22
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [627, 4]
+	Square Coord: [623.0, 0.0, 631.0, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 22 -> Conflict Sprite ID: 657
+	Conflict ClosestID: [0, None]
+	Square Coord: [623.0, 0.0, 631.0, 8.0]
+	ID List: {657: [626, 3], 972: [631, 3]}
+
+
+Human Name: Cheria Echter
+	Sprite ID: 22
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [627, 4]
+	Square Coord: [623.0, 0.0, 631.0, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 22 -> Conflict Sprite ID: 972
+	Conflict ClosestID: [0, None]
+	Square Coord: [628.0, 0.0, 636.0, 8.0]
+	ID List: {657: [626, 3], 972: [631, 3]}
+
+
+Human Name: Addam Emmond
+	Sprite ID: 23
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [192, 998]
+	Square Coord: [188.0, 994.0, 196.0, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 23 -> Conflict Sprite ID: 150
+	Conflict ClosestID: [0, None]
+	Square Coord: [196.0, 994.0, 203.99999999999997, 1002.0000000000001]
+	ID List: {150: [199, 997], 387: [193, 997], 399: [198, 997], 702: [187, 997], 815: [185, 997], 944: [198, 997]}
+
+
+Human Name: Addam Emmond
+	Sprite ID: 23
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [192, 998]
+	Square Coord: [188.0, 994.0, 196.0, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 23 -> Conflict Sprite ID: 387
+	Conflict ClosestID: [0, None]
+	Square Coord: [190.0, 994.0, 198.0, 1002.0000000000001]
+	ID List: {150: [199, 997], 387: [193, 997], 399: [198, 997], 702: [187, 997], 815: [185, 997], 944: [198, 997]}
+
+
+Human Name: Addam Emmond
+	Sprite ID: 23
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [192, 998]
+	Square Coord: [188.0, 994.0, 196.0, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 23 -> Conflict Sprite ID: 399
+	Conflict ClosestID: [0, None]
+	Square Coord: [195.0, 994.0, 203.0, 1002.0000000000001]
+	ID List: {150: [199, 997], 387: [193, 997], 399: [198, 997], 702: [187, 997], 815: [185, 997], 944: [198, 997]}
+
+
+Human Name: Addam Emmond
+	Sprite ID: 23
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [192, 998]
+	Square Coord: [188.0, 994.0, 196.0, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 23 -> Conflict Sprite ID: 702
+	Conflict ClosestID: [0, None]
+	Square Coord: [183.99999999999997, 994.0, 191.99999999999997, 1002.0000000000001]
+	ID List: {150: [199, 997], 387: [193, 997], 399: [198, 997], 702: [187, 997], 815: [185, 997], 944: [198, 997]}
+
+
+Human Name: Addam Emmond
+	Sprite ID: 23
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [192, 998]
+	Square Coord: [188.0, 994.0, 196.0, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 23 -> Conflict Sprite ID: 815
+	Conflict ClosestID: [0, None]
+	Square Coord: [181.99999999999997, 994.0, 190.0, 1002.0000000000001]
+	ID List: {150: [199, 997], 387: [193, 997], 399: [198, 997], 702: [187, 997], 815: [185, 997], 944: [198, 997]}
+
+
+Human Name: Addam Emmond
+	Sprite ID: 23
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [192, 998]
+	Square Coord: [188.0, 994.0, 196.0, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 23 -> Conflict Sprite ID: 944
+	Conflict ClosestID: [0, None]
+	Square Coord: [195.0, 994.0, 203.0, 1002.0000000000001]
+	ID List: {150: [199, 997], 387: [193, 997], 399: [198, 997], 702: [187, 997], 815: [185, 997], 944: [198, 997]}
+
+
+Human Name: Allecia Baldi
+	Sprite ID: 24
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [782, 998]
+	Square Coord: [777.9999999999999, 994.0, 785.9999999999999, 1002.0000000000001]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 24 -> Conflict Sprite ID: 677
+	Conflict ClosestID: [0, None]
+	Square Coord: [785.9999999999999, 994.0, 794.0, 1002.0000000000001]
+	ID List: {677: [789, 997]}
+
+
+Human Name: Kenia Caccamise
+	Sprite ID: 25
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [478, 4]
+	Square Coord: [473.99999999999994, 0.0, 482.0, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 25 -> Conflict Sprite ID: 250
+	Conflict ClosestID: [0, None]
+	Square Coord: [481.0, 0.0, 488.9999999999999, 8.0]
+	ID List: {250: [484, 3], 345: [470, 3], 432: [481, 3], 444: [471, 3], 478: [476, 3], 533: [480, 3], 609: [482, 3], 730: [484, 3], 791: [480, 3]}
+
+
+Human Name: Kenia Caccamise
+	Sprite ID: 25
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [478, 4]
+	Square Coord: [473.99999999999994, 0.0, 482.0, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 25 -> Conflict Sprite ID: 345
+	Conflict ClosestID: [0, None]
+	Square Coord: [467.0, 0.0, 475.0, 8.0]
+	ID List: {250: [484, 3], 345: [470, 3], 432: [481, 3], 444: [471, 3], 478: [476, 3], 533: [480, 3], 609: [482, 3], 730: [484, 3], 791: [480, 3]}
+
+
+Human Name: Kenia Caccamise
+	Sprite ID: 25
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [478, 4]
+	Square Coord: [473.99999999999994, 0.0, 482.0, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 25 -> Conflict Sprite ID: 432
+	Conflict ClosestID: [0, None]
+	Square Coord: [477.99999999999994, 0.0, 486.00000000000006, 8.0]
+	ID List: {250: [484, 3], 345: [470, 3], 432: [481, 3], 444: [471, 3], 478: [476, 3], 533: [480, 3], 609: [482, 3], 730: [484, 3], 791: [480, 3]}
+
+
+Human Name: Kenia Caccamise
+	Sprite ID: 25
+	Class Type: <class 'Classes.human.Human'>
+	Coord: [478, 4]
+	Square Coord: [473.99999999999994, 0.0, 482.0, 8.0]
+	MoveTo: None
+	Children: 0
+	Mutations: Speed -> 10, Vision -> 10, Size -> 4, Fertility -> 20, energy: 1000000.0
+	State: True, Eaten: False, ChosenTarget: None
+
+	self Sprite ID: 25 -> Conflict Sprite ID: 444
+	Conflict ClosestID: [0, None]
+	Square Coord: [467.99999999999994, 0.0, 476.0, 8.0]
+	ID List: {250: [484, 3], 345: [470, 3], 432: [481, 3], 444: [471, 3], 478: [476, 3], 533: [480, 3], 609: [482, 3], 730: [484, 3], 791: [480, 3]}

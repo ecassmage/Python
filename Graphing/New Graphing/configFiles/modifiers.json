@@ -1,0 +1,38 @@
+{
+  "scandals": {
+    "minor": {
+      "popularity": -100,
+      "fine": -10000
+    },
+    "medium": {
+      "popularity": -50000,
+      "fine": -1000000
+    },
+    "large": {
+      "popularity": -100000,
+      "fine": -10000000
+    },
+    "catastrophic": {
+      "popularity": -10000000,
+      "fine": -1000000000
+    },
+    "randomGoodPublicity": {
+      "popularity": 1000,
+      "fine": 0
+    },
+    "startUp": {
+      "goodsCost": 1.05,
+      "producedGoods": 1.2
+    },
+    "efficiencyBoost": {
+      "producedGoods": 1.05
+    },
+    "toxicWorkEnvironment": {
+      "goodsCost": 1.01,
+      "producedGoods": 0.98
+    },
+    "badRelease": {
+      "demand": 0.80
+    }
+  }
+}

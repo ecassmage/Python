@@ -1,0 +1,20 @@
+{
+  "window": {
+    "width": 1000,
+    "height": 1000
+  },
+  "board": {
+    "width": 7,
+    "height": 6,
+    "lineSize": 5
+  },
+  "teams": {
+    "TeamCount": 2,
+    "symbols": ["X", "O", "T", "U"],
+    "teamColors": ["orange", "pink", "blue", "red"]
+  },
+  "connections": 4,
+  "recursionDepth": 1,
+  "automatic": false,
+  "time": 0.25
+}

@@ -1,0 +1,60 @@
+{
+  "game": {
+    "width": 1000,
+    "height": 1000,
+    "distFromEdge": 30,
+    "fps": 100,
+    "refreshRate": "ultra"
+  },
+  "game_rules": {
+    "number_of_babies": 20,
+    "birth_rate_multiplier": 1,
+    "mutations": {
+      "chance_of_general_mutation": 15,
+      "chance_of_speed_mutation": 35,
+      "chance_of_vision_mutation": 35,
+      "chance_of_fertility_mutation": 40,
+      "chance_of_size_mutation": 35,
+      "mutation_range": {
+        "speed_range": 1,
+        "vision_range": 1,
+        "fertility_range": 2,
+        "size_range": 1
+      }
+    },
+    "ability_costs": {
+      "speed_costs": 1,
+      "vision_costs": 1,
+      "fertility_costs": 1,
+      "size_costs": 1
+    },
+    "life_expectancy": 80,
+    "food": {
+      "food_range": 25,
+      "minimum_food": 4000,
+      "maximum_food": 4000,
+      "prey_size_difference": 20
+    }
+  },
+  "human": {
+    "speed": 10,
+    "size": 4,
+    "energy": 1000,
+    "fertility": 20,
+    "vision": 10
+  },
+  "food": {
+    "size": 3,
+    "energy": 10000
+  },
+  "pop": {
+    "StartingHumans": 1000,
+    "StartingFood": 250
+  },
+  "dev": {
+    "fpsShow": false,
+    "ultra": 4,
+    "devTesting": false,
+    "statPrinting": true
+  }
+}

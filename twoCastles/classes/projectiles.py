@@ -1,6 +1,5 @@
 import pygame
 import math
-from Mechanics import TrajectoryScript
 import json
 settings = json.load(open('settings.json', 'r'))
 

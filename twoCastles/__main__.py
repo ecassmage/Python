@@ -1,9 +1,8 @@
 import pygame
 # from classes import castleClass
-from Mechanics import initializeTeams, miscMechanics
+from Mechanics import initializeTeams
 from Mechanics import proximityMechanics, Graphics_UI
 from Mechanics import castleMechanics
-import time
 import json
 settings = json.load(open('settings.json', 'r'))
 pygame.init()

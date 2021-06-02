@@ -1,0 +1,24 @@
+{
+  "window": {
+    "width": 1500,
+    "height": 1000,
+    "refresh": 60
+  },
+  "rules": {
+    "advertising": {
+      "percent": 5,
+      "perFan": 5000
+    },
+    "taxes": {
+      "tax": 50,
+      "richCompany": 10000000
+    },
+    "bankruptcy": {
+      "yearsAllowed": 5
+    }
+  },
+  "companyConditions": {
+    "numberOfCompanies": 50,
+    "lengthOfGraphs": 2000
+  }
+}
