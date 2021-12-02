@@ -1,6 +1,7 @@
 import ScrapeClass
 import GUI
 import json
+import time
 import os
 
 
@@ -43,10 +44,30 @@ class Calendar:
                 self.addScrape(ScrapeClass.Scrape(self.CourseDropFolder + "\\" + file))
             pass
 
+    def update(self):
+        self.GUI.update()
 
-if __name__ == "__main__":
+    def mainloop(self):
+        self.GUI.mainloop()
+
+
+def click(event, calendar):
+    ID = calendar.GUI.window.find_overlapping(event.x-1, event.y-1, event.x+1, event.y+1)
+    print(ID)
+
+
+def main():
     calendar = Calendar()
     calendar.FolderDrop()
     calendar.saveFile()
     calendar.GUI.Courses(calendar.CourseList)
-    calendar.GUI.tk.mainloop()
+    calendar.GUI.window.bind("<Button-1>", lambda event: click(event, calendar))
+    while True:
+
+        calendar.update()
+        time.sleep(1/60)
+    pass
+
+
+if __name__ == "__main__":
+    main()

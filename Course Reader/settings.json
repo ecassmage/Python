@@ -24,5 +24,6 @@
   "Custom": {
     "columns": 7,
     "rows": 48
-  }
+  },
+  "stipple": false
 }
