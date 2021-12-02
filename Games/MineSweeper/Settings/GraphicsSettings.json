@@ -1,0 +1,17 @@
+{
+  "Resolution": {
+    "Width": 0,
+    "Height": 0
+  },
+  "Cells": {
+    "Width": 100,
+    "Height": 100
+  },
+
+  "Background Color": "White",
+  "Line Color": "Black",
+  "Line Width": 2,
+  "Cell Size": 25, "//Comment": "This is Measured in Pixels",
+  "Number of Rows": null,
+  "Number of Columns": null
+}

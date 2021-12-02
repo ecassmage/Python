@@ -1,0 +1,10 @@
+{
+  "human": {
+    "number": 25,
+    "maxNumber": 1000
+  },
+  "food": {
+    "number": 150,
+    "maxNumber": 1000
+  }
+}

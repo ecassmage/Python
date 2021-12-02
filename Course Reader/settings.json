@@ -1,0 +1,28 @@
+{
+  "Window": {
+    "width": 2500,
+    "height": 1420,
+    "rowGrace": 100,
+    "columnGrace": 79
+  },
+  "DayView": {
+    "columns": 1,
+    "rows": 24
+  },
+  "WeekView": {
+    "columns": 7,
+    "rows": 24
+  },
+  "WeekWorkView": {
+    "columns": 5,
+    "rows": 24
+  },
+  "MonthView": {
+    "columns": 7,
+    "rows": 4
+  },
+  "Custom": {
+    "columns": 7,
+    "rows": 48
+  }
+}

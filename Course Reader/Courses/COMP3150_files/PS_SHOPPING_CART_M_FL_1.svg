@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<g>
+	<g>
+		<rect x="9.1" y="6.1" fill="#F39C12" width="1.9" height="1.9"/>
+		<rect x="6.1" y="6.1" fill="#F39C12" width="1.9" height="1.9"/>
+		<rect x="12.1" y="6.1" fill="#F39C12" width="1.9" height="1.9"/>
+		<rect x="15.1" y="6.1" fill="#F39C12" width="1.9" height="1.9"/>
+		<rect x="18.1" y="6.1" fill="#F39C12" width="1.9" height="1.9"/>
+		<rect x="21.1" y="6.1" fill="#F39C12" width="1.9" height="1.9"/>
+		<rect x="9.1" y="9.1" fill="#F39C12" width="1.9" height="1.9"/>
+		<rect x="12.1" y="9.1" fill="#F39C12" width="1.9" height="1.9"/>
+		<rect x="15.1" y="9.1" fill="#F39C12" width="1.9" height="1.9"/>
+		<rect x="18.1" y="9.1" fill="#F39C12" width="1.9" height="1.9"/>
+		<rect x="9.1" y="12.1" fill="#F39C12" width="1.9" height="1.9"/>
+		<rect x="12.1" y="12.1" fill="#F39C12" width="1.9" height="1.9"/>
+		<rect x="15.1" y="12.1" fill="#F39C12" width="1.9" height="1.9"/>
+		<rect x="18.1" y="12.1" fill="#F39C12" width="1.9" height="1.9"/>
+	</g>
+	<g>
+		<g>
+			<path fill-rule="evenodd" clip-rule="evenodd" fill="#C0392B" d="M10.2,18c-1,0-1.8,0.8-1.8,1.8s0.8,1.8,1.8,1.8
+				c1,0,1.8-0.8,1.8-1.8S11.2,18,10.2,18z M17.8,18c-1,0-1.8,0.8-1.8,1.8c0,1,0.8,1.8,1.8,1.8c1,0,1.8-0.8,1.8-1.8
+				C19.7,18.8,18.9,18,17.8,18z"/>
+		</g>
+	</g>
+	<rect y="4" fill-rule="evenodd" clip-rule="evenodd" fill="#F39C12" width="5" height="2"/>
+	<rect x="9" y="15" fill-rule="evenodd" clip-rule="evenodd" fill="#F39C12" width="10" height="2"/>
+	
+		<rect x="0.6" y="9.1" transform="matrix(0.4072 0.9134 -0.9134 0.4072 13.4028 -0.5128)" fill-rule="evenodd" clip-rule="evenodd" fill="#F39C12" width="13" height="1.9"/>
+	<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#F39C12" points="18.8,16.3 23.1,6.7 21.5,5.7 17.2,15.3 	"/>
+</g>
+</svg>

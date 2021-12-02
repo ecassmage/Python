@@ -1,0 +1,26 @@
+{
+  "Difficulties": {
+    "Easy": 10,
+    "Medium": 25,
+    "Hard": 60,
+    "Extreme": 80
+  },
+  "Easy": {
+    "Ratio": 10,
+    "Number of Mines": 100
+  },
+  "Medium": {
+    "Ratio": 25,
+    "Number of Mines": 200
+  },
+  "Hard": {
+    "Ratio": 60,
+    "Number of Mines": 400
+  },
+  "Extreme": {
+    "Ratio": 80,
+    "Number of Mines": 800
+  },
+  "Default": "Medium",
+  "Safe Start": true
+}

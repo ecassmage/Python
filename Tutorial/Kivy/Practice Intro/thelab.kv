@@ -1,0 +1,140 @@
+Canvas2:
+
+
+#: set size dp(150)
+
+
+<Canvas1>:
+    canvas:
+        Rectangle:
+            pos: self.center_x-size/2, self.center_y-size/2
+            size: size, size
+        Ellipse:
+            pos: 200, 500
+            size: size, size/2
+        Line:
+            points: (0, 0, 100, 100, 100, 0, self.width, self.height)
+
+<Canvas2>:
+    canvas:
+        Line:
+            # points: (0, self.height/2, self.width, self.height/2, self.width/2, self.height/2, self.width/2, self.height, self.width/2, 0)
+            points: (0, self.height/2, self.width, self.height/2)
+        Line:
+            points: (self.width/2, self.height, self.width/2, 0)
+
+
+<ImagesExample@GridLayout>:
+    cols: 3
+    Image:
+        source: "RESOURCES_KIVY/1_THE_LAB/RESOURCES/images/cake.jpg"
+    Image:
+        source: "RESOURCES_KIVY/1_THE_LAB/RESOURCES/images/cake.jpg"
+        allow_stretch: True
+    Image:
+        source: "RESOURCES_KIVY/1_THE_LAB/RESOURCES/images/cake.jpg"
+        allow_stretch: True
+        keep_ratio: False
+
+<WidgetExample>:
+    cols: 3
+    ToggleButton:
+        text: root.OnOffProperty
+        on_press: root.secondButton()
+        size_hint: None, 1
+        width: "100dp"
+    Button:
+        text: "Count"
+        on_press: root.on_button_click()
+        disabled: not root.State
+    Label:
+        text: root.my_text
+        font_name: "RESOURCES_KIVY/1_THE_LAB/RESOURCES/fonts/Lcd.ttf"  # Important to be Long. Longer is more complex and more complex means definitely smarter.
+        font_size: 100
+        color: 0, 0, 1
+    Switch:
+        id: SliderState
+        size_hint: None, 1
+        width: "100dp"
+        active: True
+    Slider:
+        id: my_slider
+        min:0
+        max:100
+        orientation: "vertical"
+        value: root.startingState
+        # on_value: root.onSlider(self)
+        disabled: not SliderState.active
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            text: str(int(my_slider.value))
+            font_name: "RESOURCES_KIVY/1_THE_LAB/RESOURCES/fonts/Lcd.ttf"
+            font_size: 25
+            color: 1, 0, 1
+        ProgressBar:
+            max:100
+            value: my_slider.value
+    TextInput:
+        id: TextInputText
+        size_hint: None, 1
+        width: "100dp"
+        text:"foo"
+
+        multiline:False
+        on_text_validate: root.on_text_validate(self)
+    Label:
+        text: root.text_input
+
+
+
+<AnchorLayoutExample>:
+    anchor_x: "left"
+    anchor_y: "center"
+    BoxLayout:
+        size_hint: .2, .2
+        Button:
+            text: "A"
+        Button:
+            text: "B"
+
+
+<BoxLayoutExample>:
+    orientation: "horizontal"
+    Button:
+        text: "A"
+
+        size_hint: .5, .5
+        # size: "100dp", "60dp"
+        # width: "100dp"
+        # height: "60dp"
+        # x, center_x, right
+        # y, center_y, top
+        pos_hint: { "center_y": .5 }
+
+    BoxLayout:
+        orientation: "vertical"
+        spacing: "0dp"
+        Button:
+            text: "B1"
+        Button:
+            text: "B2"
+        Button:
+            text: "B3"
+        Button:
+            text: "B4"
+    Label:
+        text: "C"
+
+
+<MainWidget>:
+    Button:
+        text: "Hello"
+        size: "400dp", "200dp"
+        pos: 100, 200
+
+    Button:
+        text: "Hello"
+        size: "400dp", "200dp"
+        pos: 200, 400
+

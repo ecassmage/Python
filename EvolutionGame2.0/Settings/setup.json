@@ -1,0 +1,9 @@
+{
+  "speed": {
+    "refresh": 60
+  },
+  "window": {
+    "width": 2000,
+    "height": 1000
+  }
+}

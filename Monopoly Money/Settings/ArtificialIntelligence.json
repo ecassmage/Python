@@ -1,0 +1,22 @@
+{
+  "House Rules": {
+    "Houses Enabled": true,
+    "Houses To Buy": 4
+  },
+  "Hotel Rules": {
+    "Hotels Enabled": true,
+    "Hotels To Buy": 1
+  },
+  "Chance Rules": {
+    "Buy House %": 75,
+    "Chain Purchasing %": 25
+  },
+  "Sell To Bank": true,
+  "Number of players beholden to rules": 0,
+  "Players Beholden to Rules": {
+    "Always Buy": false,
+    "Cash Minimum": 0, "//Cash Minimum": "//This is the Rainy Day Fund for Monopoly Players, So They will not go past this value if not necessary.",
+    "List AI Can not Purchase": []
+  }
+
+}
