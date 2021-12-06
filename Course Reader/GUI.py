@@ -25,11 +25,10 @@ class CourseBox:
         Defines the CourseBox variables
         :param CourseText: Takes the text for the label
         :param ListOfDays: Takes the List of days that this appointment needs to be shown for
-        :param ListOfTimes:
-        :param color:
+        :param ListOfTimes: Takes the List of times for each day. This will later be used to determine the position of the appointments.
+        :param color: Color of the appointment. Universal across all appointments for each course
         """
-        self.idBox = []
-        self.Label = []
+        self.idBox = []; self.Label = []
         self.Text = CourseText
         self.Days = ListOfDays
         self.Times = ListOfTimes
@@ -37,6 +36,11 @@ class CourseBox:
         pass
 
     def equals(self, course2):
+        """
+        checks if these two are equal.
+        :param course2: takes the CourseBox wanted wanted to compare against this one.
+        :return: returns True if equal, False if not equal.
+        """
         if self.Text != course2.Text or len(self.Days) != len(course2.Days) or self.color != course2.color:
             return False
         for Day in self.Days:
@@ -48,6 +52,12 @@ class CourseBox:
         return True
 
     def collectCoordinates(self, window, Day):
+        """
+
+        :param window:
+        :param Day:
+        :return:
+        """
         DaysOfWeek = {"Sunday": 0, "Monday": 1, "Tuesday": 2, "Wednesday": 3, "Thursday": 4, "Friday": 5, "Saturday": 6}
         xNotPad = window.columnDimensions[0] / 10
         yNotPad = window.columnDimensions[1] / 3

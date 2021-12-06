@@ -48,7 +48,7 @@
     "energy": 10000
   },
   "pop": {
-    "StartingHumans": 1000,
+    "StartingHumans": 1,
     "StartingFood": 250
   },
   "dev": {
