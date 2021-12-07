@@ -7,6 +7,7 @@ import Classes.Human
 import Logic
 import Window
 import InformationManager
+import mainShared
 
 
 class Container:
@@ -59,7 +60,11 @@ def switchLogic(switch, extraInfo=None):
 
         case "newset":
             extraInfo.BackUp = extraInfo.main_Logic[1].get()
-            extraInfo.Info.countUpHumans(extraInfo.BackUp)
+            timeStart = time.time()
+            if not extraInfo.Info.countUpHumans(extraInfo.BackUp, extraInfo.stg['window']['stipple']):
+                sigint(0, 0, extraInfo)
+            timeEnd = time.time()
+            mainShared.collectTime(timeStart, timeEnd, 120, "Main")
 
         case "print":
             print(extraInfo.main_Logic[1].get())
@@ -98,7 +103,12 @@ def sigint(sig, frm, container):
     container.main_Logic[0].close()
     container.main_Logic[1].close()
     print("Main Closing")
+    container.Info.Graph.tk.mainloop()
     exit()
+
+
+def test(TK):
+    pass
 
 
 # queue = [send, receive]
@@ -124,6 +134,7 @@ def main():
     container.main_Window[0].put("Check")  # These Checks are just to align the 3 processes together
     container.main_Logic[0] .put("Check")  # These Checks are just to align the 3 processes together
     print("Done")
+    # container.Info.Graph.tk.mainloop()
     while True:
         if not container.main_Window[1].empty():
             switchWindow(container.main_Window[1].get(), container)

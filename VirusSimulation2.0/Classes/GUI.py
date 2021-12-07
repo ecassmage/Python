@@ -20,11 +20,13 @@ class GUI:
         try:
             if Humans is None or Humans == "N/A":
                 return
-
+            listOfAll = self.win.find_all()
             for human in Humans:
                 if human.update:
                     self.win.coords(human.id, human.coord[0]-human.size, human.coord[1]-human.size, human.coord[0]+human.size, human.coord[1]+human.size)
-                self.win.itemconfig(human.id, fill=human.color)
+                    self.win.itemconfig(human.id, fill=human.color)
+                elif human.id in listOfAll:
+                    self.win.delete(human.id)
 
         except tk.TclError:
             return

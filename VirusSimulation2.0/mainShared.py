@@ -2,8 +2,9 @@ def collectTime(startTime, endTime, hz, invisible=None, debug=False, queue=None)
     timeCalculate = (1 / hz) - (endTime - startTime)
     if invisible is not None and debug:
         if queue is not None:
-            queue[0].put("print")
-            queue[0].put(f"{endTime - startTime} -> {timeCalculate}: {invisible} of {1/hz}")
+            if timeCalculate < 0:
+                queue[0].put("print")
+                queue[0].put(f"{endTime - startTime} -> {timeCalculate}: {invisible} of {1/hz}")
         else:
             print(f"{endTime - startTime} -> {timeCalculate}: {invisible} of {1/hz}")
 
