@@ -21,7 +21,7 @@ class Human:
         self.size = self.stg['human']['size'] // 2
         self.speed = self.stg['human']['speed']
 
-        self.coord = getBoundaryPosition([self.stg['window']['width'], self.stg['window']['height']], self.size)
+        self.coord = getStartingPosition([self.stg['window']['width'], self.stg['window']['height']], self.size)
         self.pathing = [0, 0, [0, 0]]  # [Ratio, Current Point in Ratio, [unit vector x, unit vector y]]
         self.path = []  # a two-point x-y indicating the position this human will be traversing for the foreseeable future.
 
@@ -146,7 +146,7 @@ def addKey(dictionary, addThis):
         dictionary.update({addThis.coord[0]: [addThis]})
 
 
-def getBoundaryPosition(Boundary, size):
+def getStartingPosition(Boundary, size):
     return [random.randrange(1 + size, Boundary[0] - size - 1), random.randrange(1 + size, Boundary[1] - size - 1)]
 
 

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Learning PyQT.iml" filepath="$PROJECT_DIR$/.idea/Learning PyQT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../twoCastles/.idea/twoCastles.iml" filepath="$PROJECT_DIR$/../../twoCastles/.idea/twoCastles.iml" />
     </modules>
   </component>
 </project>
