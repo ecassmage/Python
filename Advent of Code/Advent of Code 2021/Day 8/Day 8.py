@@ -1,6 +1,3 @@
-import copy
-
-
 def nextDict(setOfSegments, segOutputs):
     segKnown = [''] * 4
     for part in setOfSegments.split(" "):
@@ -107,8 +104,6 @@ def nextDict(setOfSegments, segOutputs):
 
 
 if __name__ == "__main__":
-    dictionary = {0: "abcefg", 1:  "cf", 2: "acdeg", 3:  "acdfg", 4:  "bcdf", 5:  "abdfg", 6:  "abdefg", 7:  "acf", 8: "abcdefg", 9: "abcdfg"}
-    dictionary2 = copy.copy(dictionary)
     arr = []
     for line in open("input.txt"):
         arr.append(line.replace("\n", "").split(" | "))
@@ -117,4 +112,3 @@ if __name__ == "__main__":
         total += nextDict(beatRoot[0], beatRoot[1])
 
     print(total)
-    pass
