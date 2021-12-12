@@ -2,18 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a460573a-cf7e-4209-af29-d7de2ad187a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Github.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Github.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI Games/Evolution/Evolution_Redo/Evolution Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/AI Games/Evolution/Evolution_Redo/Evolution Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AI_Project/Settings" beforeDir="false" afterPath="$PROJECT_DIR$/AI_Project/Settings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twoCastles/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/twoCastles/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twoCastles/classes/projectiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/twoCastles/classes/projectiles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/Advent of Code 2020/Day 1/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Advent of Code/Advent of Code 2020/Day 1/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advent of Code/Advent of Code 2020/Day 2/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Advent of Code/Advent of Code 2020/Day 2/input.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,7 +25,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -30,28 +32,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/PasswordManager" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.Evolution Game">
-    <configuration name="Changeable_Hexapawn_AI" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Github" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AI Games/Hexapawn_AI/Hexapawn_Files" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AI Games/Hexapawn_AI/Hexapawn_Files/Changeable_Hexapawn_AI.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.Redo">
     <configuration name="Checkers" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Github" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -115,6 +96,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Redo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Github" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Advent of Code/Advent of Code 2020/Day 1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Advent of Code/Advent of Code 2020/Day 1/Redo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="mainFile" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Github" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -137,22 +139,23 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Changeable_Hexapawn_AI" />
       <item itemvalue="Python.Checkers" />
       <item itemvalue="Python.Evolution Game" />
       <item itemvalue="Python.Evolution" />
       <item itemvalue="Python.mainFile" />
+      <item itemvalue="Python.Redo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Redo" />
         <item itemvalue="Python.Evolution Game" />
         <item itemvalue="Python.mainFile" />
         <item itemvalue="Python.Evolution" />
         <item itemvalue="Python.Checkers" />
-        <item itemvalue="Python.Changeable_Hexapawn_AI" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -165,64 +168,6 @@
       <updated>1611843925215</updated>
     </task>
     <servers />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="734" y="375" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612378434071">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="734" y="375" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1440/-1920.412.1920.1080@0.0.2560.1440" timestamp="1612378434071" />
-    <state x="1059" y="462" key="FileChooserDialogImpl" timestamp="1612450466442">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="1059" y="462" key="FileChooserDialogImpl/0.0.2560.1440/-1920.412.1920.1080@0.0.2560.1440" timestamp="1612450466442" />
-    <state width="1899" height="195" key="GridCell.Tab.0.bottom" timestamp="1612383692771">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="1899" height="195" key="GridCell.Tab.0.bottom/0.0.2560.1440/-1920.412.1920.1080@-1920.412.1920.1080" timestamp="1612379798017" />
-    <state width="1899" height="195" key="GridCell.Tab.0.bottom/0.0.2560.1440/-1920.412.1920.1080@0.0.2560.1440" timestamp="1612383692771" />
-    <state width="1899" height="195" key="GridCell.Tab.0.center" timestamp="1612383692770">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="1899" height="195" key="GridCell.Tab.0.center/0.0.2560.1440/-1920.412.1920.1080@-1920.412.1920.1080" timestamp="1612379798017" />
-    <state width="1899" height="195" key="GridCell.Tab.0.center/0.0.2560.1440/-1920.412.1920.1080@0.0.2560.1440" timestamp="1612383692770" />
-    <state width="1899" height="195" key="GridCell.Tab.0.left" timestamp="1612383692770">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="1899" height="195" key="GridCell.Tab.0.left/0.0.2560.1440/-1920.412.1920.1080@-1920.412.1920.1080" timestamp="1612379798017" />
-    <state width="1899" height="195" key="GridCell.Tab.0.left/0.0.2560.1440/-1920.412.1920.1080@0.0.2560.1440" timestamp="1612383692770" />
-    <state width="1899" height="195" key="GridCell.Tab.0.right" timestamp="1612383692771">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="1899" height="195" key="GridCell.Tab.0.right/0.0.2560.1440/-1920.412.1920.1080@-1920.412.1920.1080" timestamp="1612379798017" />
-    <state width="1899" height="195" key="GridCell.Tab.0.right/0.0.2560.1440/-1920.412.1920.1080@0.0.2560.1440" timestamp="1612383692771" />
-    <state width="1899" height="195" key="GridCell.Tab.1.bottom" timestamp="1612383692771">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="1899" height="195" key="GridCell.Tab.1.bottom/0.0.2560.1440/-1920.412.1920.1080@-1920.412.1920.1080" timestamp="1612379798017" />
-    <state width="1899" height="195" key="GridCell.Tab.1.bottom/0.0.2560.1440/-1920.412.1920.1080@0.0.2560.1440" timestamp="1612383692771" />
-    <state width="1899" height="195" key="GridCell.Tab.1.center" timestamp="1612383692771">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="1899" height="195" key="GridCell.Tab.1.center/0.0.2560.1440/-1920.412.1920.1080@-1920.412.1920.1080" timestamp="1612379798017" />
-    <state width="1899" height="195" key="GridCell.Tab.1.center/0.0.2560.1440/-1920.412.1920.1080@0.0.2560.1440" timestamp="1612383692771" />
-    <state width="1899" height="195" key="GridCell.Tab.1.left" timestamp="1612383692771">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="1899" height="195" key="GridCell.Tab.1.left/0.0.2560.1440/-1920.412.1920.1080@-1920.412.1920.1080" timestamp="1612379798017" />
-    <state width="1899" height="195" key="GridCell.Tab.1.left/0.0.2560.1440/-1920.412.1920.1080@0.0.2560.1440" timestamp="1612383692771" />
-    <state width="1899" height="195" key="GridCell.Tab.1.right" timestamp="1612383692771">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state width="1899" height="195" key="GridCell.Tab.1.right/0.0.2560.1440/-1920.412.1920.1080@-1920.412.1920.1080" timestamp="1612379798017" />
-    <state width="1899" height="195" key="GridCell.Tab.1.right/0.0.2560.1440/-1920.412.1920.1080@0.0.2560.1440" timestamp="1612383692771" />
-    <state x="781" y="362" key="SettingsEditor" timestamp="1612378525613">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="781" y="362" key="SettingsEditor/0.0.2560.1440/-1920.412.1920.1080@0.0.2560.1440" timestamp="1612378525613" />
-    <state x="976" y="544" key="com.intellij.ide.util.TipDialog" timestamp="1612378546631">
-      <screen x="0" y="0" width="2560" height="1440" />
-    </state>
-    <state x="976" y="544" key="com.intellij.ide.util.TipDialog/0.0.2560.1440/-1920.412.1920.1080@0.0.2560.1440" timestamp="1612378546631" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
