@@ -56,5 +56,16 @@ def PrisonerSubject():
 
 
 if __name__ == '__main__':
-    PrisonerSubject()
-    pass
+    RunProg = True
+    while True:
+        if RunProg:
+            PrisonerSubject()
+            RunProg = False
+        inp = input("\nQuit: to exit\n"
+                    "Run: to run program\n"
+                    "Type here: ")
+        match inp.lower():
+            case 'quit':
+                exit()
+            case 'run':
+                RunProg = True

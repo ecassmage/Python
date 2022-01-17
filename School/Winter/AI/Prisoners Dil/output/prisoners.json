@@ -1,0 +1,33 @@
+{
+  "TestStuff": {
+    "prisoner1": {
+      "BetrayalOdds": 50
+    },
+    "prisoner2": {
+      "BetrayalOdds": 50
+    }
+  },
+
+  "Tests": 1000,
+
+  "Punishments": {
+    "__NoBetrayals__": "The time of punishment if neither prisoner betrays the other",
+    "NoBetrayals": 1,
+
+    "__SingleBetrayal_Betrayer__": "The time of punishment if this prisoner betrays the other but the other doesn't",
+    "SingleBetrayal_Betrayer": 0,
+
+    "__SingleBetrayal_NotBetrayer__": "The time of punishment if this prisoner does not betray the other but the other does",
+    "SingleBetrayal_NotBetrayer": 10,
+
+    "__DoubleBetrayal__": "The time of punishment if both prisoners betray each other",
+    "DoubleBetrayal": 5
+  },
+  "OtherPrisoner": {
+    "__Iterate__": "Will this program iterate between these two odds ie [0, 10], 0%, 1%, 2%, etc or false for no iteration just constant",
+    "__Iterate_Switches__": "false: for no iterations, [start, stop] for iteration",
+    "Iterate": [0, 100],
+    "__BetrayalOdds__": "Odds that the other prisoner betrays the subject prisoner.",
+    "BetrayalOdds": 25.2
+  }
+}
