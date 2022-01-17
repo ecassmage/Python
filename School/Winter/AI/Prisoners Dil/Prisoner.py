@@ -22,6 +22,7 @@ def PrisonerSubject():
     start, stop = round(info["OtherPrisoner"]["BetrayalOdds"]), round(info["OtherPrisoner"]["BetrayalOdds"]) + 1
     if isinstance(info["OtherPrisoner"]['Iterate'], list):
         start, stop = info["OtherPrisoner"]['Iterate']
+        stop += 1
     Betrayals = 0
     NoBetrayals = 0
 
@@ -39,7 +40,7 @@ def PrisonerSubject():
                 Betrayal += info["Punishments"]["SingleBetrayal_Betrayer"]
                 NoBetrayal += info["Punishments"]["NoBetrayals"]
 
-        print(f"Odds: {odds}")
+        print(f"Odds: {odds}%")
         print(f"\tDidn't Betray:    {NoBetrayal}, Average Time (years): {NoBetrayal / info['Tests']}\n"
               f"\tDid Betray:       {Betrayal}, Average Time (years): {Betrayal / info['Tests']}\n"
               f"\tConclusion:       {'Betray' if Betrayal < NoBetrayal else 'Do not Betray'}\n")
