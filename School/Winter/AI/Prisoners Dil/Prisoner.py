@@ -3,11 +3,21 @@ import json
 
 
 def getOdds():
+    """
+    Generates a random number.
+    :return: returns random number
+    """
     num = random.randrange(100)  # + random.random()
     return num if num <= 100 else 100
 
 
 def betray(oddsOfBetrayal):
+    """
+    checks odds of betrayal utilized the getOdds() function to generate a
+    random number so as to be used for calculating odds.
+    :param oddsOfBetrayal: utilizes a number which indicates odds. Controlled inside the prisoners.json file.
+    :return: returns boolean for if a betrayal occurred or not.
+    """
     return True if getOdds() < oddsOfBetrayal else False
 
 
@@ -41,8 +51,9 @@ def PrisonerSubject():
                 NoBetrayal += info["Punishments"]["NoBetrayals"]
 
         print(f"Odds: {odds}%")
-        print(f"\tDidn't Betray:    {NoBetrayal}, Average Time (years): {NoBetrayal / info['Tests']}\n"
-              f"\tDid Betray:       {Betrayal}, Average Time (years): {Betrayal / info['Tests']}\n"
+        #                             Accumulated years prison, Averaged over x number of tests.
+        print(f"\tDidn't Betray:    {NoBetrayal} (years total), Average Time (years): {NoBetrayal / info['Tests']}\n"
+              f"\tDid Betray:       {Betrayal} (years total), Average Time (years): {Betrayal / info['Tests']}\n"
               f"\tConclusion:       {'Betray' if Betrayal < NoBetrayal else 'Do not Betray'}\n")
 
         match Betrayal < NoBetrayal:
