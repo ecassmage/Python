@@ -13,21 +13,21 @@ def mkHospital(names):
 def mkDoctor(fname, lname, hospital):
     global DoctorID
     DoctorID += 1
-    docName = f"'{random.choice(fname)} {random.choice(lname)}'"
+    docName = f"'{random.choice(fname)} {random.choice(lname).capitalize()}'"
     return 'Doctor', f'{DoctorID-1}, {docName}, {hospital}'
 
 
 def mkNurse(fname, lname, hospital):
     global NurseID
     NurseID += 1
-    nurName = f"'{random.choice(fname)} {random.choice(lname)}'"
+    nurName = f"'{random.choice(fname)} {random.choice(lname).capitalize()}'"
     return 'Nurse', f'{NurseID - 1}, {nurName}, {hospital}'
 
 
 def mkPatient(fname, lname, hospital, primary_doc):
     global PatientID
     PatientID += 1
-    patName = f"'{random.choice(fname)} {random.choice(lname)}'"
+    patName = f"'{random.choice(fname)} {random.choice(lname).capitalize()}'"
     return 'Patient', f'{PatientID - 1}, {patName}, {random.randrange(10)}, {mkPhone()}, {hospital}, \'{random.choice(["M", "F"])}\', {random.randrange(100)}, {random.randrange(100, 200)}, {primary_doc}'
     pass
 
