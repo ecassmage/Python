@@ -43,8 +43,8 @@ def writeToFile(file, info):
 def main(doctor=9, nurse=15, patient=30, hospital=3):
     fNames, lNames, hospitalNames, addressList = [line.replace('\n', '').replace('\r', '') for line in open('firstNames.txt')],  \
                                     [line.replace('\n', '').replace('\r', '') for line in open('lastNames.txt')],  \
-                                    [line.replace('\n', '').replace('\r', '') for line in open('hospital names.txt')], \
-                                    [line.replace('\n', '').replace('\r', '') for line in open('street-names.txt')]
+                                    [line.replace('\n', '').replace('\r', '') for line in open('hospital_names.txt')], \
+                                    [line.replace('\n', '').replace('\r', '') for line in open('street_names.txt')]
     hospitalList = {}
     sqlFile = open('output.sql', 'w')
     for _ in range(hospital):

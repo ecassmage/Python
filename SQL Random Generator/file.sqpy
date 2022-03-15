@@ -1,0 +1,16 @@
+foreign=true
+%%
+ranks = [Baron, Count, Duke, King, Emperor]
+specialty = [computers, biology, chemistry, math, science]
+main_offices = [1001A, 1002A, 1003A, 1004A, 1001B, 1002B, 1003B, 1004B, 1001C, 1002C, 1003C, 1004C]
+sponsors = [Apple, Blackberry, Corvo, Delta, Eggton, Follow, Gordon]
+degree_program = [Bachelors, Masters, PHD]
+time_percent = range(10, 100)
+%%
+Professor(INT UNIQUE, VARCHAR fname, VARCHAR lname, VARCHAR ranks, VARCHAR specialty) * 10
+Department(INT UNIQUE, VARCHAR main_offices UNIQUE, VARCHAR specialty UNIQUE, INT Professor(0) FOREIGN) * 5
+Project(INT UNIQUE, VARCHAR sponsors, DOUBLE, DATE, DATE, INT Professor(0) FOREIGN) * 5
+Graduate(INT UNIQUE, VARCHAR fname, VARCHAR lname, VARCHAR degree_program, VARCHAR specialty, INT Department(0) FOREIGN, NULL) * 10
+works_on(INT Professor(0) FOREIGN, INT Graduate(0) FOREIGN, INT Project(0) FOREIGN) * 5
+works_in(INT time_percent, INT Department(0) FOREIGN, INT Professor(0) FOREIGN) * 15
+co_investigator(INT Project(0) FOREIGN, INT Professor(0) FOREIGN) * 6
